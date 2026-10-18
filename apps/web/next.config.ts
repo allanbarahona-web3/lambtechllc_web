@@ -1,15 +1,29 @@
 import type { NextConfig } from "next";
 
+type RemotePattern = NonNullable<NonNullable<NextConfig["images"]>["remotePatterns"]>[number];
+
+function remotePatternFromPublicUrl(value: string | undefined): RemotePattern | undefined {
+  if (!value) return undefined;
+
+  try {
+    const url = new URL(value);
+    if (url.protocol !== "https:") return undefined;
+
+    return {
+      hostname: url.hostname,
+      pathname: url.pathname,
+      port: url.port,
+      protocol: "https",
+    };
+  } catch {
+    return undefined;
+  }
+}
+
+const footerLogoPattern = remotePatternFromPublicUrl(process.env.NEXT_PUBLIC_FOOTER_LOGO_URL);
+
 const nextConfig: NextConfig = {
-  images: {
-    remotePatterns: [
-      {
-        hostname: "barmentech-saas.atl1.digitaloceanspaces.com",
-        pathname: "/LAMBTECH-WEBSIDE/**",
-        protocol: "https",
-      },
-    ],
-  },
+  ...(footerLogoPattern ? { images: { remotePatterns: [footerLogoPattern] } } : {}),
   turbopack: {
     rules: {
       "*.css": {

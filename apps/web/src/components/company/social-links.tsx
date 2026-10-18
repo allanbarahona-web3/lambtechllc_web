@@ -1,4 +1,4 @@
-import { FacebookIcon, InstagramIcon, TikTokIcon } from "@/components/company/brand-icons";
+import { FacebookIcon, InstagramIcon, LinkedInIcon, TikTokIcon } from "@/components/company/brand-icons";
 import type { SocialPlatform } from "@/config/public-company";
 
 type SocialLinksProps = {
@@ -7,11 +7,12 @@ type SocialLinksProps = {
   links: Record<SocialPlatform, string | undefined>;
 };
 
-const socialOrder: SocialPlatform[] = ["facebook", "instagram", "tiktok"];
+const socialOrder: SocialPlatform[] = ["linkedin", "facebook", "instagram", "tiktok"];
 
 const socialIcons = {
   facebook: FacebookIcon,
   instagram: InstagramIcon,
+  linkedin: LinkedInIcon,
   tiktok: TikTokIcon,
 };
 

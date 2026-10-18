@@ -1,4 +1,4 @@
-export type SocialPlatform = "facebook" | "instagram" | "tiktok";
+export type SocialPlatform = "facebook" | "instagram" | "linkedin" | "tiktok";
 
 export type PublicPartnerLogo = {
   name: string;
@@ -56,6 +56,7 @@ function partnerLogos(value: string | undefined): PublicPartnerLogo[] {
 const social = {
   facebook: publicHttpUrl(process.env.NEXT_PUBLIC_FACEBOOK_URL),
   instagram: publicHttpUrl(process.env.NEXT_PUBLIC_INSTAGRAM_URL),
+  linkedin: publicHttpUrl(process.env.NEXT_PUBLIC_LINKEDIN_URL),
   tiktok: publicHttpUrl(process.env.NEXT_PUBLIC_TIKTOK_URL),
 } satisfies Record<SocialPlatform, string | undefined>;
 

@@ -20,6 +20,14 @@ export function InstagramIcon(props: BrandIconProps) {
   );
 }
 
+export function LinkedInIcon(props: BrandIconProps) {
+  return (
+    <svg fill="none" viewBox="0 0 24 24" {...props}>
+      <path d="M6.3 8.45H3.25V20.5H6.3V8.45ZM4.78 3.5a1.78 1.78 0 1 0 0 3.55 1.78 1.78 0 0 0 0-3.55ZM20.75 13.6c0-3.64-1.94-5.33-4.53-5.33-2.08 0-3.01 1.14-3.53 1.95V8.45H9.65V20.5h3.04v-5.97c0-1.58.3-3.1 2.25-3.1 1.92 0 1.95 1.8 1.95 3.2v5.87h3.05V13.6h.81Z" fill="currentColor" />
+    </svg>
+  );
+}
+
 export function TikTokIcon(props: BrandIconProps) {
   return (
     <svg fill="none" viewBox="0 0 24 24" {...props}>
