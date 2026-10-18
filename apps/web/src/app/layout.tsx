@@ -1,5 +1,13 @@
 import type { Metadata } from "next";
+import { Instrument_Sans } from "next/font/google";
 import "./globals.css";
+
+const instrumentSans = Instrument_Sans({
+  subsets: ["latin", "latin-ext"],
+  display: "swap",
+  variable: "--font-instrument-sans",
+  fallback: ["Arial", "Helvetica", "sans-serif"],
+});
 
 export const metadata: Metadata = {
   title: "LAMBTECH LLC",
@@ -13,7 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className={instrumentSans.variable}>{children}</body>
     </html>
   );
 }
