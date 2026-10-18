@@ -1,10 +1,11 @@
+import { ContactDetails } from "@/components/company/contact-details";
 import { Container } from "@/components/design-system/container";
 import { SectionHeading } from "@/components/design-system/section-heading";
 import { ContactForm, type ContactFormLabels } from "./contact-form";
 
 type ContactPath = { copy: string; id: string; label: string; title: string };
 type ContactSectionProps = {
-  contactDetails: { address: string; email: string; phone: string; whatsapp: string };
+  contactDetails: { address: string; email: string; fax: string; phone: string; whatsapp: string };
   description: string;
   eyebrow: string;
   form: ContactFormLabels;
@@ -34,4 +35,3 @@ export function ContactSection({ contactDetails, description, eyebrow, form, pat
     </section>
   );
 }
-import { ContactDetails } from "@/components/company/contact-details";

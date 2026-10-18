@@ -47,9 +47,9 @@ export default async function LocalizedLegalPage({ params }: LegalRouteProps) {
       }} />
       <LegalPage approvalGate={legalT("approvalGate")} eyebrow={legalT("eyebrow")} pendingCopy={legalT("pendingCopy")} pendingTitle={legalT("pendingTitle")} title={legalT(`${legal}.title`)} />
       <CorporateFooter currentLocale={locale} labels={{
-        about: footer("about"), contact: footer("contact"), contactDetails: footer("contactDetails", { returnObjects: true }) as { address: string; email: string; phone: string; whatsapp: string }, cookies: footer("cookies"), copyright: footer("copyright"),
+        about: footer("about"), contact: footer("contact"), contactDetails: footer("contactDetails", { returnObjects: true }) as { address: string; email: string; fax: string; phone: string; whatsapp: string }, cookies: footer("cookies"), copyright: footer("copyright"),
         legalTitle: footer("legalTitle"), logoAlt: footer("logoAlt"), navigationTitle: footer("navigationTitle"),
-        privacy: footer("privacy"), social: footer("social", { returnObjects: true }) as Record<"facebook" | "instagram" | "linkedin" | "whatsapp" | "youtube", string>, socialTitle: footer("socialTitle"), tagline: footer("tagline"), technology: footer("technology"), terms: footer("terms"), whatWeDo: footer("whatWeDo"),
+        privacy: footer("privacy"), social: footer("social", { returnObjects: true }) as Record<"facebook" | "instagram" | "linkedin" | "whatsapp" | "youtube", string>, socialTitle: footer("socialTitle"), status: footer("status"), tagline: footer("tagline"), technology: footer("technology"), terms: footer("terms"), whatWeDo: footer("whatWeDo"),
       }} />
     </>
   );

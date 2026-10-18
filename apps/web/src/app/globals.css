@@ -961,6 +961,12 @@ section[id] {
   color: var(--color-surface-base);
 }
 
+.whatsapp-button svg {
+  width: 1.125rem;
+  height: 1.125rem;
+  fill: currentColor;
+}
+
 .legal-page {
   min-height: 60vh;
   padding-block: clamp(var(--space-8), 10vw, 10rem);

@@ -11,7 +11,7 @@ type CorporateFooterProps = {
   labels: {
     about: string;
     contact: string;
-    contactDetails: { address: string; email: string; phone: string; whatsapp: string };
+    contactDetails: { address: string; email: string; fax: string; phone: string; whatsapp: string };
     cookies: string;
     copyright: string;
     legalTitle: string;
@@ -20,6 +20,7 @@ type CorporateFooterProps = {
     privacy: string;
     social: Record<SocialPlatform, string>;
     socialTitle: string;
+    status: string;
     tagline: string;
     technology: string;
     terms: string;
@@ -43,8 +44,8 @@ export function CorporateFooter({ currentLocale, labels }: CorporateFooterProps)
             <Link href={`/${currentLocale}`}>
               <Image alt={labels.logoAlt} height={713} src="/LogoColor.png" width={2206} />
             </Link>
-            <p>{publicCompany.name}</p>
-            <p>{publicCompany.location}</p>
+            <p>{publicCompany.name} · {labels.status}: {publicCompany.companyStatus}</p>
+            <p>{publicCompany.jurisdiction}</p>
             <p>{labels.tagline}</p>
             <ContactDetails className="contact-details--footer" labels={labels.contactDetails} />
             <SocialLinks label={labels.socialTitle} labels={labels.social} links={publicCompany.social} />

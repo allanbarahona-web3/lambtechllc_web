@@ -32,6 +32,17 @@ function publicPhone(value: string | undefined) {
   return candidate && /\d/.test(candidate) ? candidate : undefined;
 }
 
+function publicE164(value: string | undefined) {
+  const candidate = optionalValue(value);
+  return candidate && /^\+[1-9]\d{6,14}$/.test(candidate) ? candidate : undefined;
+}
+
+function publicTelephone(displayValue: string | undefined, e164Value: string | undefined) {
+  const display = publicPhone(displayValue);
+  const e164 = publicE164(e164Value);
+  return display && e164 ? { display, e164 } : undefined;
+}
+
 function partnerLogos(value: string | undefined): PublicPartnerLogo[] {
   const candidates = optionalValue(value)?.split(";") ?? [];
 
@@ -52,20 +63,23 @@ const social = {
 
 export const publicCompany = {
   address: optionalValue(process.env.NEXT_PUBLIC_COMPANY_ADDRESS),
+  companyStatus: optionalValue(process.env.NEXT_PUBLIC_COMPANY_STATUS) ?? "Active",
   email: publicEmail(process.env.NEXT_PUBLIC_COMPANY_EMAIL),
-  location: "Wyoming, USA",
+  fax: publicTelephone(process.env.NEXT_PUBLIC_COMPANY_FAX, process.env.NEXT_PUBLIC_COMPANY_FAX_E164),
+  jurisdiction: optionalValue(process.env.NEXT_PUBLIC_COMPANY_JURISDICTION) ?? "Wyoming, USA",
   media: {
     heroImageUrl:
       publicHttpUrl(process.env.NEXT_PUBLIC_LAMBTECH_HERO_IMAGE_URL) ??
       "https://barmentech-saas.atl1.digitaloceanspaces.com/LAMBTECH-WEBSIDE/Hero%20Desktop%20Lambtech%20Web.svg",
   },
-  name: "LAMBTECH LLC",
+  name: optionalValue(process.env.NEXT_PUBLIC_COMPANY_NAME) ?? "LAMBTECH LLC",
   partnerLogos: partnerLogos(process.env.NEXT_PUBLIC_PARTNER_LOGOS),
-  phone: publicPhone(process.env.NEXT_PUBLIC_COMPANY_PHONE),
+  phone: publicTelephone(process.env.NEXT_PUBLIC_COMPANY_PHONE, process.env.NEXT_PUBLIC_COMPANY_PHONE_E164),
   social,
+  website: publicHttpUrl(process.env.NEXT_PUBLIC_COMPANY_WEBSITE),
   whatsappUrl: social.whatsapp,
 } as const;
 
-export function telephoneHref(phone: string) {
-  return `tel:${phone.replace(/[^+\d]/g, "")}`;
+export function telephoneHref(e164: string) {
+  return `tel:${e164}`;
 }

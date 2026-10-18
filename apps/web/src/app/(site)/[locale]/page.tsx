@@ -48,7 +48,7 @@ export default async function LocalePage({ params }: LocalePageProps) {
         <PartnerNetwork approvalNote={partners("approvalNote")} description={partners("description")} eyebrow={partners("eyebrow")} logoFallback={partners("logoFallback")} slotLabel={partners("slotLabel")} title={partners("title")} />
         <OurApproach closing={approach("closing")} description={approach("description")} eyebrow={approach("eyebrow")} steps={approach("steps", { returnObjects: true }) as unknown as Service[]} title={approach("title")} />
         <ContactSection
-          contactDetails={contact("details", { returnObjects: true }) as { address: string; email: string; phone: string; whatsapp: string }}
+          contactDetails={contact("details", { returnObjects: true }) as { address: string; email: string; fax: string; phone: string; whatsapp: string }}
           description={contact("description")}
           eyebrow={contact("eyebrow")}
           form={contact("form", { returnObjects: true }) as unknown as ContactFormLabels}
@@ -57,9 +57,9 @@ export default async function LocalePage({ params }: LocalePageProps) {
         />
       </main>
       <CorporateFooter currentLocale={locale} labels={{
-        about: footer("about"), contact: footer("contact"), contactDetails: footer("contactDetails", { returnObjects: true }) as { address: string; email: string; phone: string; whatsapp: string }, cookies: footer("cookies"), copyright: footer("copyright"),
+        about: footer("about"), contact: footer("contact"), contactDetails: footer("contactDetails", { returnObjects: true }) as { address: string; email: string; fax: string; phone: string; whatsapp: string }, cookies: footer("cookies"), copyright: footer("copyright"),
         legalTitle: footer("legalTitle"), logoAlt: footer("logoAlt"), navigationTitle: footer("navigationTitle"),
-        privacy: footer("privacy"), social: footer("social", { returnObjects: true }) as Record<"facebook" | "instagram" | "linkedin" | "whatsapp" | "youtube", string>, socialTitle: footer("socialTitle"), tagline: footer("tagline"), technology: footer("technology"), terms: footer("terms"), whatWeDo: footer("whatWeDo"),
+        privacy: footer("privacy"), social: footer("social", { returnObjects: true }) as Record<"facebook" | "instagram" | "linkedin" | "whatsapp" | "youtube", string>, socialTitle: footer("socialTitle"), status: footer("status"), tagline: footer("tagline"), technology: footer("technology"), terms: footer("terms"), whatWeDo: footer("whatWeDo"),
       }} />
       <WhatsAppButton label={contact("details.whatsapp")} url={publicCompany.whatsappUrl} />
     </>
