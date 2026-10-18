@@ -1,3 +1,11 @@
+import {
+  BriefcaseBusiness,
+  Camera,
+  CirclePlay,
+  MessageCircle,
+  ThumbsUp,
+  type LucideIcon,
+} from "lucide-react";
 import type { SocialPlatform } from "@/config/public-company";
 
 type SocialLinksProps = {
@@ -8,28 +16,40 @@ type SocialLinksProps = {
 
 const socialOrder: SocialPlatform[] = ["linkedin", "facebook", "instagram", "youtube", "whatsapp"];
 
-const socialMarks: Record<SocialPlatform, string> = {
-  facebook: "f",
-  instagram: "◎",
-  linkedin: "in",
-  whatsapp: "◔",
-  youtube: "▶",
+const socialIcons: Record<SocialPlatform, LucideIcon> = {
+  facebook: ThumbsUp,
+  instagram: Camera,
+  linkedin: BriefcaseBusiness,
+  whatsapp: MessageCircle,
+  youtube: CirclePlay,
 };
 
 export function SocialLinks({ label, labels, links }: SocialLinksProps) {
-  const available = socialOrder.filter((platform) => links[platform]);
-  if (!available.length) return null;
+  const isDevelopmentPreview = process.env.NODE_ENV === "development";
+  const platforms = isDevelopmentPreview ? socialOrder : socialOrder.filter((platform) => links[platform]);
+  if (!platforms.length) return null;
 
   return (
     <nav aria-label={label} className="social-links">
       <ul>
-        {available.map((platform) => (
-          <li key={platform}>
-            <a aria-label={labels[platform]} href={links[platform]} rel="noopener noreferrer" target="_blank">
-              <span aria-hidden="true">{socialMarks[platform]}</span>
-            </a>
-          </li>
-        ))}
+        {platforms.map((platform) => {
+          const Icon = socialIcons[platform];
+          const url = links[platform];
+
+          return (
+            <li key={platform}>
+              {url ? (
+                <a aria-label={labels[platform]} href={url} rel="noopener noreferrer" target="_blank">
+                  <Icon aria-hidden="true" strokeWidth={1.8} />
+                </a>
+              ) : (
+                <span aria-disabled="true" aria-label={labels[platform]} className="social-links__item social-links__item--disabled">
+                  <Icon aria-hidden="true" strokeWidth={1.8} />
+                </span>
+              )}
+            </li>
+          );
+        })}
       </ul>
     </nav>
   );
