@@ -1,11 +1,4 @@
-import {
-  BriefcaseBusiness,
-  Camera,
-  CirclePlay,
-  MessageCircle,
-  ThumbsUp,
-  type LucideIcon,
-} from "lucide-react";
+import { FacebookIcon, InstagramIcon, TikTokIcon } from "@/components/company/brand-icons";
 import type { SocialPlatform } from "@/config/public-company";
 
 type SocialLinksProps = {
@@ -14,14 +7,12 @@ type SocialLinksProps = {
   links: Record<SocialPlatform, string | undefined>;
 };
 
-const socialOrder: SocialPlatform[] = ["linkedin", "facebook", "instagram", "youtube", "whatsapp"];
+const socialOrder: SocialPlatform[] = ["facebook", "instagram", "tiktok"];
 
-const socialIcons: Record<SocialPlatform, LucideIcon> = {
-  facebook: ThumbsUp,
-  instagram: Camera,
-  linkedin: BriefcaseBusiness,
-  whatsapp: MessageCircle,
-  youtube: CirclePlay,
+const socialIcons = {
+  facebook: FacebookIcon,
+  instagram: InstagramIcon,
+  tiktok: TikTokIcon,
 };
 
 export function SocialLinks({ label, labels, links }: SocialLinksProps) {

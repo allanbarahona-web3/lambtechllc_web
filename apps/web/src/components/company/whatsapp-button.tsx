@@ -1,4 +1,4 @@
-import { MessageCircle } from "lucide-react";
+import { WhatsAppIcon } from "@/components/company/brand-icons";
 
 type WhatsAppButtonProps = {
   label: string;
@@ -10,7 +10,7 @@ export function WhatsAppButton({ label, url }: WhatsAppButtonProps) {
 
   return (
     <a aria-label={label} className="whatsapp-button" href={url} rel="noopener noreferrer" target="_blank">
-      <MessageCircle aria-hidden="true" strokeWidth={1.8} />
+      <WhatsAppIcon aria-hidden="true" />
       <span className="whatsapp-button__tooltip" role="tooltip">{label}</span>
     </a>
   );

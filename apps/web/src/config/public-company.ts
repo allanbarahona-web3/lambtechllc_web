@@ -1,4 +1,4 @@
-export type SocialPlatform = "facebook" | "instagram" | "linkedin" | "whatsapp" | "youtube";
+export type SocialPlatform = "facebook" | "instagram" | "tiktok";
 
 export type PublicPartnerLogo = {
   name: string;
@@ -56,9 +56,7 @@ function partnerLogos(value: string | undefined): PublicPartnerLogo[] {
 const social = {
   facebook: publicHttpUrl(process.env.NEXT_PUBLIC_FACEBOOK_URL),
   instagram: publicHttpUrl(process.env.NEXT_PUBLIC_INSTAGRAM_URL),
-  linkedin: publicHttpUrl(process.env.NEXT_PUBLIC_LINKEDIN_URL),
-  whatsapp: publicHttpUrl(process.env.NEXT_PUBLIC_WHATSAPP_URL),
-  youtube: publicHttpUrl(process.env.NEXT_PUBLIC_YOUTUBE_URL),
+  tiktok: publicHttpUrl(process.env.NEXT_PUBLIC_TIKTOK_URL),
 } satisfies Record<SocialPlatform, string | undefined>;
 
 export const publicCompany = {
@@ -77,7 +75,7 @@ export const publicCompany = {
   phone: publicTelephone(process.env.NEXT_PUBLIC_COMPANY_PHONE, process.env.NEXT_PUBLIC_COMPANY_PHONE_E164),
   social,
   website: publicHttpUrl(process.env.NEXT_PUBLIC_COMPANY_WEBSITE),
-  whatsappUrl: social.whatsapp,
+  whatsappUrl: publicHttpUrl(process.env.NEXT_PUBLIC_WHATSAPP_URL),
 } as const;
 
 export function telephoneHref(e164: string) {

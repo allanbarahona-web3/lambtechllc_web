@@ -59,7 +59,7 @@ export default async function LocalePage({ params }: LocalePageProps) {
       <CorporateFooter currentLocale={locale} labels={{
         about: footer("about"), contact: footer("contact"), contactDetails: footer("contactDetails", { returnObjects: true }) as { address: string; email: string; fax: string; phone: string; whatsapp: string }, cookies: footer("cookies"), copyright: footer("copyright"),
         legalTitle: footer("legalTitle"), logoAlt: footer("logoAlt"), navigationTitle: footer("navigationTitle"),
-        privacy: footer("privacy"), social: footer("social", { returnObjects: true }) as Record<"facebook" | "instagram" | "linkedin" | "whatsapp" | "youtube", string>, socialTitle: footer("socialTitle"), status: footer("status"), tagline: footer("tagline"), technology: footer("technology"), terms: footer("terms"), whatWeDo: footer("whatWeDo"),
+        privacy: footer("privacy"), social: footer("social", { returnObjects: true }) as Record<"facebook" | "instagram" | "tiktok", string>, socialTitle: footer("socialTitle"), tagline: footer("tagline"), technology: footer("technology"), terms: footer("terms"), whatWeDo: footer("whatWeDo"),
       }} />
       <WhatsAppButton label={contact("details.whatsapp")} url={publicCompany.whatsappUrl} />
     </>

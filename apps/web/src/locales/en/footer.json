@@ -7,7 +7,6 @@
   "whatWeDo": "What We Do", "technology": "Technology", "about": "About", "contact": "Let's Talk",
   "privacy": "Privacy Policy", "terms": "Terms of Use", "cookies": "Cookie Policy",
   "contactDetails": { "email": "Email", "phone": "Telephone", "fax": "Fax", "address": "Mailing address", "whatsapp": "Chat on WhatsApp" },
-  "social": { "linkedin": "Visit LAMBTECH on LinkedIn", "facebook": "Visit LAMBTECH on Facebook", "instagram": "Visit LAMBTECH on Instagram", "youtube": "Visit LAMBTECH on YouTube", "whatsapp": "Chat with LAMBTECH on WhatsApp" },
-  "status": "Status",
+  "social": { "facebook": "Visit LAMBTECH on Facebook", "instagram": "Visit LAMBTECH on Instagram", "tiktok": "Visit LAMBTECH on TikTok" },
   "copyright": "© 2026 LAMBTECH LLC"
 }
