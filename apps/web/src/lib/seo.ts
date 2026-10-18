@@ -19,16 +19,18 @@ export function getLocaleMetadata(
   locale: Locale,
   title: string,
   description: string,
+  pathSuffix = "",
 ): Metadata {
-  const pathname = `/${locale}`;
+  const normalizedSuffix = pathSuffix.replace(/^\/+/, "");
+  const pathname = normalizedSuffix ? `/${locale}/${normalizedSuffix}` : `/${locale}`;
 
   return {
     alternates: {
       canonical: pathname,
       languages: {
-        en: "/en",
-        es: "/es",
-        "x-default": `/${defaultLocale}`,
+        en: normalizedSuffix ? `/en/${normalizedSuffix}` : "/en",
+        es: normalizedSuffix ? `/es/${normalizedSuffix}` : "/es",
+        "x-default": normalizedSuffix ? `/${defaultLocale}/${normalizedSuffix}` : `/${defaultLocale}`,
       },
     },
     description,

@@ -9,8 +9,9 @@ type MobileNavigationProps = {
   closeLabel: string;
   currentLocale: Locale;
   englishLabel: string;
-  items: Array<{ id: PlannedSectionId; label: string }>;
+  items: Array<{ href: string; id: PlannedSectionId; label: string }>;
   languageLabel: string;
+  localePath?: string;
   navigationLabel: string;
   openLabel: string;
   spanishLabel: string;
@@ -22,6 +23,7 @@ export function MobileNavigation({
   englishLabel,
   items,
   languageLabel,
+  localePath,
   navigationLabel,
   openLabel,
   spanishLabel,
@@ -88,9 +90,7 @@ export function MobileNavigation({
             <ul className="mobile-navigation__list">
               {items.map((item) => (
                 <li key={item.id}>
-                  <span aria-disabled="true" className="mobile-navigation__deferred-item">
-                    {item.label}
-                  </span>
+                  <Link className="mobile-navigation__link" href={item.href} onClick={() => closeMenu()}>{item.label}</Link>
                 </li>
               ))}
             </ul>
@@ -101,7 +101,7 @@ export function MobileNavigation({
                 <Link
                   aria-current={currentLocale === "en" ? "page" : undefined}
                   aria-label={englishLabel}
-                  href="/en"
+                  href={localePath ? `/en/${localePath}` : "/en"}
                   hrefLang="en"
                   lang="en"
                   onClick={() => closeMenu()}
@@ -113,7 +113,7 @@ export function MobileNavigation({
                 <Link
                   aria-current={currentLocale === "es" ? "page" : undefined}
                   aria-label={spanishLabel}
-                  href="/es"
+                  href={localePath ? `/es/${localePath}` : "/es"}
                   hrefLang="es"
                   lang="es"
                   onClick={() => closeMenu()}

@@ -1,0 +1,18 @@
+{
+  "eyebrow": "Contacto",
+  "title": "Comience con la conversación comercial adecuada.",
+  "description": "Seleccione la ruta que mejor corresponde a su consulta. La entrega del formulario se conectará solo después de que el backend independiente esté aprobado y disponible.",
+  "paths": [
+    { "id": "manufacturers", "label": "Para fabricantes", "title": "Expandirse a Latinoamérica", "copy": "Converse sobre oportunidades de desarrollo de mercado para tecnología especializada." },
+    { "id": "customers", "label": "Para clientes LATAM", "title": "Encontrar tecnología", "copy": "Comparta el contexto de aplicación para la búsqueda de tecnología." },
+    { "id": "general", "label": "Consultas generales", "title": "Inicie una conversación", "copy": "Use esta ruta para una consulta fuera de los dos caminos principales." }
+  ],
+  "form": {
+    "title": "Detalles de la consulta",
+    "notice": "Este formulario de contacto está inactivo en la compilación de desarrollo. No envía, almacena ni comparte información.",
+    "name": "Nombre", "company": "Empresa", "email": "Correo laboral", "country": "País o mercado", "message": "Mensaje", "required": "Obligatorio", "submit": "Enviar consulta", "inactive": "La entrega no está disponible hasta implementar el servicio de contacto aprobado del lado del servidor.",
+    "validationSummary": "Complete los campos obligatorios antes de que se pueda habilitar la entrega.",
+    "errors": { "name": "Ingrese su nombre.", "email": "Ingrese un correo laboral válido.", "message": "Ingrese un mensaje." },
+    "honeypot": "Deje este campo vacío"
+  }
+}

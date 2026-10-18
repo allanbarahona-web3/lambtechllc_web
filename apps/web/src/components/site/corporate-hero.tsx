@@ -1,18 +1,20 @@
 import { Container } from "@/components/design-system/container";
+import { ButtonLink } from "@/components/design-system/button-link";
+import type { Locale } from "@/lib/i18n/config";
 import { heroMedia } from "@/lib/media";
 
 type CorporateHeroProps = {
+  currentLocale: Locale;
   labels: {
     eyebrow: string;
     headline: string;
     mediaAlt: string;
     primaryCta: string;
     secondaryCta: string;
-    supportingCopy: string;
   };
 };
 
-export function CorporateHero({ labels }: CorporateHeroProps) {
+export function CorporateHero({ currentLocale, labels }: CorporateHeroProps) {
   return (
     <section aria-labelledby="hero-title" className="corporate-hero">
       <div className="corporate-hero__media">
@@ -33,20 +35,16 @@ export function CorporateHero({ labels }: CorporateHeroProps) {
             <p className="eyebrow">{labels.eyebrow}</p>
             <h1 id="hero-title">{labels.headline}</h1>
             <div className="corporate-hero__actions">
-              <button className="button-link button-link--primary" disabled type="button">
+              <ButtonLink href={`/${currentLocale}#contact-manufacturers`}>
                 {labels.primaryCta}
-              </button>
-              <button className="button-link button-link--secondary" disabled type="button">
+              </ButtonLink>
+              <ButtonLink href={`/${currentLocale}#contact-customers`} variant="secondary">
                 {labels.secondaryCta}
-              </button>
+              </ButtonLink>
             </div>
           </div>
         </Container>
       </div>
-
-      <Container>
-        <p className="corporate-hero__supporting-copy">{labels.supportingCopy}</p>
-      </Container>
     </section>
   );
 }

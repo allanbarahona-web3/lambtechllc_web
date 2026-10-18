@@ -1,0 +1,11 @@
+{
+  "eyebrow": "Technology & markets",
+  "title": "Technology contexts that deserve careful sourcing.",
+  "description": "LAMBTECH does not operate a product catalogue. These are application contexts for technical and commercial conversations.",
+  "areas": [
+    { "title": "Water & Infrastructure", "copy": "Water networks, valves, flow measurement, monitoring and infrastructure applications." },
+    { "title": "Gas, Biogas & Energy", "copy": "Gas and biogas processes, energy systems, measurement and control contexts." },
+    { "title": "Industrial Instrumentation", "copy": "Instrumentation, flow meters, automation, RTUs, SCADA and industrial tools." },
+    { "title": "Connected Technologies", "copy": "Connected monitoring and IoT application contexts; no standalone SaaS portfolio is represented." }
+  ]
+}

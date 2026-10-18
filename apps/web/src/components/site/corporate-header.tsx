@@ -11,6 +11,7 @@ import { MobileNavigation } from "./mobile-navigation";
 
 type CorporateHeaderProps = {
   currentLocale: Locale;
+  localePath?: string;
   labels: {
     about: string;
     contact: string;
@@ -33,7 +34,7 @@ const navigationOrder: PlannedSectionId[] = [
   "contact",
 ];
 
-export function CorporateHeader({ currentLocale, labels }: CorporateHeaderProps) {
+export function CorporateHeader({ currentLocale, labels, localePath }: CorporateHeaderProps) {
   const navigationItems = navigationOrder.map((id) => ({
     href: getPlannedSectionHref(currentLocale, id),
     id,
@@ -66,12 +67,7 @@ export function CorporateHeader({ currentLocale, labels }: CorporateHeaderProps)
             <ul>
               {navigationItems.map((item) => (
                 <li key={item.id}>
-                  <span
-                    aria-disabled="true"
-                    className="site-header__deferred-link"
-                  >
-                    {item.label}
-                  </span>
+                  <Link className="site-header__navigation-link" href={item.href}>{item.label}</Link>
                 </li>
               ))}
             </ul>
@@ -83,12 +79,11 @@ export function CorporateHeader({ currentLocale, labels }: CorporateHeaderProps)
               englishAccessibleLabel={labels.english}
               englishLabel="EN"
               label={labels.language}
+              path={localePath}
               spanishAccessibleLabel={labels.spanish}
               spanishLabel="ES"
             />
-            <span aria-disabled="true" className="site-header__contact-cta">
-              {labels.contact}
-            </span>
+            <Link className="site-header__contact-cta" href={getPlannedSectionHref(currentLocale, "contact")}>{labels.contact}</Link>
           </div>
         </div>
 
@@ -109,6 +104,7 @@ export function CorporateHeader({ currentLocale, labels }: CorporateHeaderProps)
             englishLabel={labels.english}
             items={navigationItems}
             languageLabel={labels.language}
+            localePath={localePath}
             navigationLabel={labels.navigation}
             openLabel={labels.menuOpen}
             spanishLabel={labels.spanish}

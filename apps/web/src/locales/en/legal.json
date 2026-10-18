@@ -1,0 +1,9 @@
+{
+  "privacy": { "title": "Privacy Policy", "description": "Privacy Policy content for LAMBTECH LLC is awaiting legal approval." },
+  "terms": { "title": "Terms of Use", "description": "Terms of Use content for LAMBTECH LLC is awaiting legal approval." },
+  "cookies": { "title": "Cookie Policy", "description": "Cookie Policy content for LAMBTECH LLC is awaiting legal approval." },
+  "eyebrow": "Legal information",
+  "pendingTitle": "Approved legal content is pending.",
+  "pendingCopy": "This page is a structural placeholder only. It is not a final policy and must not be presented as approved legal content.",
+  "approvalGate": "Deployment gate: approved English and Spanish legal copy must be reviewed and authorized before publication."
+}

@@ -1,0 +1,10 @@
+{
+  "eyebrow": "Qué hacemos",
+  "title": "Tres formas de crear conexión comercial.",
+  "description": "Un rol internacional enfocado para fabricantes y empresas que buscan tecnología especializada.",
+  "items": [
+    { "number": "01", "title": "Abastecimiento Internacional", "copy": "Identificamos y coordinamos tecnología internacional especializada para aplicaciones de infraestructura e industria." },
+    { "number": "02", "title": "Desarrollo de Mercado LATAM", "copy": "Ayudamos a los fabricantes a evaluar oportunidades y desarrollar rutas comerciales relevantes en América Latina." },
+    { "number": "03", "title": "Soluciones Tecnológicas", "copy": "Conectamos las tecnologías adecuadas con contextos prácticos de agua, energía, infraestructura e industria." }
+  ]
+}

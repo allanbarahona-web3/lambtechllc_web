@@ -1,0 +1,9 @@
+{
+  "privacy": { "title": "Política de Privacidad", "description": "El contenido de la Política de Privacidad de LAMBTECH LLC está pendiente de aprobación legal." },
+  "terms": { "title": "Términos de Uso", "description": "El contenido de los Términos de Uso de LAMBTECH LLC está pendiente de aprobación legal." },
+  "cookies": { "title": "Política de Cookies", "description": "El contenido de la Política de Cookies de LAMBTECH LLC está pendiente de aprobación legal." },
+  "eyebrow": "Información legal",
+  "pendingTitle": "El contenido legal aprobado está pendiente.",
+  "pendingCopy": "Esta página es solo una estructura provisional. No es una política final ni debe presentarse como contenido legal aprobado.",
+  "approvalGate": "Condición para despliegue: el texto legal aprobado en inglés y español debe revisarse y autorizarse antes de publicarse."
+}

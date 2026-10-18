@@ -1,0 +1,18 @@
+{
+  "eyebrow": "Contact",
+  "title": "Start with the right commercial conversation.",
+  "description": "Select the path that best matches your inquiry. Form delivery will be connected only after the separate backend is approved and available.",
+  "paths": [
+    { "id": "manufacturers", "label": "For manufacturers", "title": "Expand into LATAM", "copy": "Discuss market-development opportunities for specialized technology." },
+    { "id": "customers", "label": "For LATAM customers", "title": "Find technology", "copy": "Share the application context for technology sourcing." },
+    { "id": "general", "label": "General inquiries", "title": "Start a conversation", "copy": "Use this route for an inquiry outside the two primary paths." }
+  ],
+  "form": {
+    "title": "Inquiry details",
+    "notice": "This contact form is inactive in the development build. It does not submit, store or send any information.",
+    "name": "Name", "company": "Company", "email": "Work email", "country": "Country or market", "message": "Message", "required": "Required", "submit": "Send inquiry", "inactive": "Delivery is unavailable until the approved server-side contact service is implemented.",
+    "validationSummary": "Please complete the required fields before delivery can be enabled.",
+    "errors": { "name": "Enter your name.", "email": "Enter a valid work email.", "message": "Enter a message." },
+    "honeypot": "Leave this field empty"
+  }
+}

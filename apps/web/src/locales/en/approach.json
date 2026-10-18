@@ -1,0 +1,10 @@
+{
+  "eyebrow": "Our approach",
+  "title": "A disciplined role between technology and market.",
+  "description": "LAMBTECH connects international technology with the commercial context required to evaluate a meaningful opportunity.",
+  "steps": [
+    { "number": "01", "title": "Understand opportunities", "copy": "Clarify the application, commercial context and parties involved." },
+    { "number": "02", "title": "Source and coordinate technology", "copy": "Identify relevant technology and coordinate the international commercial path." },
+    { "number": "03", "title": "Connect manufacturers, partners and markets", "copy": "Create the right connection for an informed next commercial step." }
+  ]
+}
