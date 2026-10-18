@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "title": "Design System Preview | LAMBTECH LLC",
-    "description": "LAMBTECH LLC design system preview."
+    "title": "LAMBTECH LLC | International Technology & Market Development",
+    "description": "LAMBTECH connects specialized technology manufacturers with opportunities across Latin America through international procurement, technology sourcing and market development."
   },
   "accessibility": {
     "skipToContent": "Skip to content"
@@ -25,29 +25,16 @@
       "contact": "Let's Talk"
     }
   },
-  "intro": {
-    "eyebrow": "LAMBTECH LLC",
-    "title": "Design system preview",
-    "description": "A neutral environment for reviewing typography, color, spacing, and responsive composition before website content is introduced.",
-    "primaryAction": "Primary action",
-    "secondaryAction": "Secondary action"
-  },
-  "typography": {
-    "eyebrow": "Typography",
-    "title": "A measured editorial hierarchy.",
-    "description": "Fluid display sizes provide presence without compromising comfortable reading at smaller viewports.",
-    "specimenLabel": "Typography scale preview",
-    "h3": "H3 / Structured emphasis",
-    "h4": "H4 / Supporting detail",
-    "body": "Body text is set for clarity, with an intentionally restrained measure and line height suitable for English and Spanish corporate content.",
-    "label": "Label / Supporting metadata"
-  },
-  "tokens": {
-    "eyebrow": "Foundation tokens",
-    "title": "A focused visual vocabulary.",
-    "description": "Semantic tokens make the approved palette and layout decisions repeatable as the site grows.",
-    "brandEmphasis": "Brand emphasis",
-    "primaryText": "Primary text",
-    "subtleSurface": "Subtle surface"
+  "hero": {
+    "eyebrow": "International Technology & Market Development",
+    "headline": "Connecting Global Technology with Latin American Opportunity.",
+    "supportingCopy": "LAMBTECH connects specialized technology manufacturers with business opportunities across Latin America through international procurement, technology sourcing and market development.",
+    "primaryCta": "Expand Into LATAM",
+    "secondaryCta": "Find Technology",
+    "media": {
+      "label": "Approved editorial photography pending",
+      "title": "Hero media pending",
+      "description": "A licensed, approved image related to international technology collaboration will be introduced here."
+    }
   }
 }
