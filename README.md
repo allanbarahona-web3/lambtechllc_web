@@ -1,6 +1,6 @@
 # LAMBTECH LLC website
 
-Production frontend foundation for the LAMBTECH LLC corporate website.
+Production monorepo foundation for the LAMBTECH LLC corporate website.
 
 ## Stack
 
@@ -10,6 +10,12 @@ Production frontend foundation for the LAMBTECH LLC corporate website.
 - Tailwind CSS
 - ESLint
 - pnpm
+
+## Structure
+
+- `apps/web` — Next.js corporate website frontend.
+- `apps/api` — reserved for a future NestJS backend; not part of this foundation.
+- `index.html` and `index2.html` — local visual reference prototypes, not application source.
 
 ## Commands
 
@@ -22,6 +28,5 @@ pnpm build
 
 ## Repository notes
 
-- `index.html` and `index2.html` are preserved visual reference prototypes, not application source.
-- The application source lives in `src/app`.
+- Workspace commands delegate to `@lambtech/web`; application source lives in `apps/web/src/app`.
 - Future NestJS, Prisma, PostgreSQL, media, and internationalization work are intentionally outside this foundation.
