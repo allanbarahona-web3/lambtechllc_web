@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "title": "Vista previa del sistema de diseño | LAMBTECH LLC",
+    "description": "Vista previa del sistema de diseño de LAMBTECH LLC."
+  },
+  "accessibility": {
+    "skipToContent": "Saltar al contenido"
+  },
+  "languageSwitcher": {
+    "label": "Idioma",
+    "english": "Inglés (EN)",
+    "spanish": "Español (ES)"
+  },
+  "intro": {
+    "eyebrow": "LAMBTECH LLC",
+    "title": "Vista previa del sistema de diseño",
+    "description": "Un entorno neutral para revisar tipografía, color, espaciado y composición adaptable antes de incorporar el contenido del sitio web.",
+    "primaryAction": "Acción principal",
+    "secondaryAction": "Acción secundaria"
+  },
+  "typography": {
+    "eyebrow": "Tipografía",
+    "title": "Una jerarquía editorial medida.",
+    "description": "Los tamaños fluidos para titulares aportan presencia sin comprometer una lectura cómoda en pantallas pequeñas.",
+    "specimenLabel": "Vista previa de la escala tipográfica",
+    "h3": "H3 / Énfasis estructurado",
+    "h4": "H4 / Detalle de apoyo",
+    "body": "El texto de cuerpo está diseñado para aportar claridad, con una medida deliberadamente contenida y una interlínea adecuada para contenido corporativo en inglés y español.",
+    "label": "Etiqueta / Metadatos de apoyo"
+  },
+  "tokens": {
+    "eyebrow": "Tokens de base",
+    "title": "Un vocabulario visual enfocado.",
+    "description": "Los tokens semánticos hacen repetibles las decisiones aprobadas de paleta y composición a medida que el sitio evoluciona.",
+    "brandEmphasis": "Énfasis de marca",
+    "primaryText": "Texto principal",
+    "subtleSurface": "Superficie sutil"
+  }
+}
