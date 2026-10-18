@@ -2,9 +2,9 @@ import { Container } from "@/components/design-system/container";
 import { SectionHeading } from "@/components/design-system/section-heading";
 
 type ApproachStep = { copy: string; number: string; title: string };
-type OurApproachProps = { description: string; eyebrow: string; steps: ApproachStep[]; title: string };
+type OurApproachProps = { closing: string; description: string; eyebrow: string; steps: ApproachStep[]; title: string };
 
-export function OurApproach({ description, eyebrow, steps, title }: OurApproachProps) {
+export function OurApproach({ closing, description, eyebrow, steps, title }: OurApproachProps) {
   return (
     <section aria-labelledby="about-title" className="content-section" id="about">
       <Container>
@@ -20,6 +20,7 @@ export function OurApproach({ description, eyebrow, steps, title }: OurApproachP
             </li>
           ))}
         </ol>
+        <p className="approach-list__closing">{closing}</p>
       </Container>
     </section>
   );

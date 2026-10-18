@@ -7,6 +7,7 @@
     { "id": "customers", "label": "Para clientes LATAM", "title": "Encontrar tecnología", "copy": "Comparta el contexto de aplicación para la búsqueda de tecnología." },
     { "id": "general", "label": "Consultas generales", "title": "Inicie una conversación", "copy": "Use esta ruta para una consulta fuera de los dos caminos principales." }
   ],
+  "details": { "email": "Correo electrónico", "phone": "Teléfono", "address": "Dirección comercial", "whatsapp": "Conversar por WhatsApp" },
   "form": {
     "title": "Detalles de la consulta",
     "notice": "Este formulario de contacto está inactivo en la compilación de desarrollo. No envía, almacena ni comparte información.",

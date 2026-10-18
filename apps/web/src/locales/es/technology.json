@@ -2,6 +2,7 @@
   "eyebrow": "Tecnología y mercados",
   "title": "Contextos tecnológicos que requieren una búsqueda cuidadosa.",
   "description": "LAMBTECH no opera un catálogo de productos. Estos son contextos de aplicación para conversaciones técnicas y comerciales.",
+  "closing": "El punto de partida es el contexto de aplicación: condiciones operativas, requisitos técnicos y la ruta comercial necesaria para evaluar una conversación tecnológica relevante.",
   "areas": [
     { "title": "Agua e Infraestructura", "copy": "Redes de agua, válvulas, medición de caudal, monitoreo y aplicaciones de infraestructura." },
     { "title": "Gas, Biogás y Energía", "copy": "Procesos de gas y biogás, sistemas de energía y contextos de medición y control." },

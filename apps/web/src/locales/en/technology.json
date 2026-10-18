@@ -2,6 +2,7 @@
   "eyebrow": "Technology & markets",
   "title": "Technology contexts that deserve careful sourcing.",
   "description": "LAMBTECH does not operate a product catalogue. These are application contexts for technical and commercial conversations.",
+  "closing": "The starting point is the application context: operating conditions, technical requirements and the commercial path required to evaluate a relevant technology conversation.",
   "areas": [
     { "title": "Water & Infrastructure", "copy": "Water networks, valves, flow measurement, monitoring and infrastructure applications." },
     { "title": "Gas, Biogas & Energy", "copy": "Gas and biogas processes, energy systems, measurement and control contexts." },

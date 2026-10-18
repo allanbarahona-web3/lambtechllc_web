@@ -6,6 +6,7 @@ import enFooter from "@/locales/en/footer.json";
 import enHero from "@/locales/en/hero.json";
 import enIntroduction from "@/locales/en/introduction.json";
 import enLegal from "@/locales/en/legal.json";
+import enPartners from "@/locales/en/partners.json";
 import enTechnology from "@/locales/en/technology.json";
 import enWhatWeDo from "@/locales/en/what-we-do.json";
 import esApproach from "@/locales/es/approach.json";
@@ -15,6 +16,7 @@ import esFooter from "@/locales/es/footer.json";
 import esHero from "@/locales/es/hero.json";
 import esIntroduction from "@/locales/es/introduction.json";
 import esLegal from "@/locales/es/legal.json";
+import esPartners from "@/locales/es/partners.json";
 import esTechnology from "@/locales/es/technology.json";
 import esWhatWeDo from "@/locales/es/what-we-do.json";
 import type { Locale } from "./config";
@@ -28,6 +30,7 @@ const resources = {
     hero: enHero,
     introduction: enIntroduction,
     legal: enLegal,
+    partners: enPartners,
     technology: enTechnology,
     whatWeDo: enWhatWeDo,
   },
@@ -39,6 +42,7 @@ const resources = {
     hero: esHero,
     introduction: esIntroduction,
     legal: esLegal,
+    partners: esPartners,
     technology: esTechnology,
     whatWeDo: esWhatWeDo,
   },

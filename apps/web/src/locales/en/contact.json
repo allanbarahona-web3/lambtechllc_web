@@ -7,6 +7,7 @@
     { "id": "customers", "label": "For LATAM customers", "title": "Find technology", "copy": "Share the application context for technology sourcing." },
     { "id": "general", "label": "General inquiries", "title": "Start a conversation", "copy": "Use this route for an inquiry outside the two primary paths." }
   ],
+  "details": { "email": "Email", "phone": "Phone", "address": "Business address", "whatsapp": "Chat on WhatsApp" },
   "form": {
     "title": "Inquiry details",
     "notice": "This contact form is inactive in the development build. It does not submit, store or send any information.",

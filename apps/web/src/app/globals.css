@@ -645,6 +645,55 @@ section[id] {
   border-bottom: var(--border-width) solid var(--color-border-subtle);
 }
 
+.technology-list__closing,
+.approach-list__closing {
+  max-width: 48rem;
+  margin-top: var(--space-6);
+  color: var(--color-text-secondary);
+  font-size: 1.0625rem;
+}
+
+.partner-network__strip {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: var(--space-4);
+  margin-top: var(--space-7);
+}
+
+.partner-network__slot,
+.public-media-frame {
+  aspect-ratio: var(--media-aspect-ratio, 3 / 2);
+  border: var(--border-width) solid var(--color-border-subtle);
+  background: var(--color-surface-base);
+}
+
+.partner-network__slot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-4);
+  color: var(--color-text-secondary);
+  font-size: 0.75rem;
+  line-height: 1.35;
+  text-align: center;
+}
+
+.public-media-frame {
+  width: 100%;
+  object-fit: contain;
+}
+
+.public-media-frame--placeholder {
+  background: var(--color-surface-subtle);
+}
+
+.partner-network__note {
+  max-width: 44rem;
+  margin-top: var(--space-5);
+  color: var(--color-text-secondary);
+  font-size: 0.875rem;
+}
+
 .approach-list {
   display: grid;
   gap: var(--space-6);
@@ -751,14 +800,6 @@ section[id] {
   font-size: 0.875rem;
 }
 
-.contact-form__honeypot {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-}
-
 .contact-form__actions {
   display: flex;
   align-items: center;
@@ -804,6 +845,62 @@ section[id] {
   font-weight: 600;
 }
 
+.contact-details {
+  display: grid;
+  gap: var(--space-2);
+  font-style: normal;
+}
+
+.contact-details--section {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-3) var(--space-5);
+  max-width: 52rem;
+  margin-top: var(--space-6);
+  padding-top: var(--space-5);
+  border-top: var(--border-width) solid var(--color-border-subtle);
+  color: var(--color-text-secondary);
+  font-size: 0.9375rem;
+}
+
+.contact-details--section a {
+  width: fit-content;
+}
+
+.contact-details--footer {
+  margin-top: var(--space-5);
+  color: inherit;
+  font-size: 0.875rem;
+}
+
+.social-links {
+  margin-top: var(--space-5);
+}
+
+.social-links ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+}
+
+.social-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border: var(--border-width) solid rgb(255 255 255 / 30%);
+  border-radius: 50%;
+  color: var(--color-surface-base);
+  font-size: 0.8125rem;
+  font-weight: 600;
+}
+
+.social-links a:hover {
+  border-color: var(--color-surface-base);
+  background: rgb(255 255 255 / 12%);
+  text-decoration: none;
+}
+
 .site-footer__heading {
   margin-bottom: var(--space-4);
   color: var(--color-surface-base);
@@ -836,6 +933,32 @@ section[id] {
   padding-top: var(--space-5);
   border-top: var(--border-width) solid rgb(255 255 255 / 20%);
   font-size: 0.875rem;
+}
+
+.whatsapp-button {
+  position: fixed;
+  z-index: 15;
+  right: var(--space-5);
+  bottom: var(--space-5);
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  min-height: 2.75rem;
+  padding: 0.625rem 0.875rem;
+  border: var(--border-width) solid var(--color-brand-teal);
+  border-radius: var(--radius-control);
+  background: var(--color-brand-teal);
+  color: var(--color-surface-base);
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1.2;
+  text-decoration: none;
+}
+
+.whatsapp-button:hover {
+  background: var(--color-brand-teal-hover);
+  border-color: var(--color-brand-teal-hover);
+  color: var(--color-surface-base);
 }
 
 .legal-page {
@@ -877,12 +1000,17 @@ section[id] {
   .site-footer__brand {
     grid-column: 1 / -1;
   }
+
+  .partner-network__strip {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
 @media (max-width: 39.99rem) {
   .technology-list,
   .contact-form__grid,
-  .site-footer__grid {
+  .site-footer__grid,
+  .contact-details--section {
     grid-template-columns: 1fr;
   }
 
@@ -894,6 +1022,15 @@ section[id] {
   .contact-form__actions {
     align-items: flex-start;
     flex-direction: column;
+  }
+
+  .partner-network__strip {
+    gap: var(--space-3);
+  }
+
+  .whatsapp-button {
+    right: var(--space-4);
+    bottom: var(--space-4);
   }
 }
 

@@ -4,6 +4,7 @@ import { ContactForm, type ContactFormLabels } from "./contact-form";
 
 type ContactPath = { copy: string; id: string; label: string; title: string };
 type ContactSectionProps = {
+  contactDetails: { address: string; email: string; phone: string; whatsapp: string };
   description: string;
   eyebrow: string;
   form: ContactFormLabels;
@@ -11,7 +12,7 @@ type ContactSectionProps = {
   title: string;
 };
 
-export function ContactSection({ description, eyebrow, form, paths, title }: ContactSectionProps) {
+export function ContactSection({ contactDetails, description, eyebrow, form, paths, title }: ContactSectionProps) {
   return (
     <section aria-labelledby="contact-title" className="content-section content-section--subtle" id="contact">
       <Container>
@@ -25,6 +26,7 @@ export function ContactSection({ description, eyebrow, form, paths, title }: Con
             </article>
           ))}
         </div>
+        <ContactDetails className="contact-details--section" labels={contactDetails} />
         <div className="contact-form-wrap" id="contact-form">
           <ContactForm labels={form} />
         </div>
@@ -32,3 +34,4 @@ export function ContactSection({ description, eyebrow, form, paths, title }: Con
     </section>
   );
 }
+import { ContactDetails } from "@/components/company/contact-details";

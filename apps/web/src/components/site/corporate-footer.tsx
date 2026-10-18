@@ -1,5 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
+import { ContactDetails } from "@/components/company/contact-details";
+import { SocialLinks } from "@/components/company/social-links";
+import { publicCompany, type SocialPlatform } from "@/config/public-company";
 import { Container } from "@/components/design-system/container";
 import type { Locale } from "@/lib/i18n/config";
 
@@ -8,13 +11,15 @@ type CorporateFooterProps = {
   labels: {
     about: string;
     contact: string;
+    contactDetails: { address: string; email: string; phone: string; whatsapp: string };
     cookies: string;
     copyright: string;
     legalTitle: string;
-    location: string;
     logoAlt: string;
     navigationTitle: string;
     privacy: string;
+    social: Record<SocialPlatform, string>;
+    socialTitle: string;
     tagline: string;
     technology: string;
     terms: string;
@@ -38,9 +43,11 @@ export function CorporateFooter({ currentLocale, labels }: CorporateFooterProps)
             <Link href={`/${currentLocale}`}>
               <Image alt={labels.logoAlt} height={713} src="/LogoColor.png" width={2206} />
             </Link>
-            <p>LAMBTECH LLC</p>
-            <p>{labels.location}</p>
+            <p>{publicCompany.name}</p>
+            <p>{publicCompany.location}</p>
             <p>{labels.tagline}</p>
+            <ContactDetails className="contact-details--footer" labels={labels.contactDetails} />
+            <SocialLinks label={labels.socialTitle} labels={labels.social} links={publicCompany.social} />
           </div>
           <nav aria-label={labels.navigationTitle}>
             <p className="site-footer__heading">{labels.navigationTitle}</p>

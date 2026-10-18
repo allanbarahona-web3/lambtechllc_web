@@ -2,9 +2,9 @@ import { Container } from "@/components/design-system/container";
 import { SectionHeading } from "@/components/design-system/section-heading";
 
 type TechnologyArea = { copy: string; title: string };
-type TechnologyMarketsProps = { areas: TechnologyArea[]; description: string; eyebrow: string; title: string };
+type TechnologyMarketsProps = { areas: TechnologyArea[]; closing: string; description: string; eyebrow: string; title: string };
 
-export function TechnologyMarkets({ areas, description, eyebrow, title }: TechnologyMarketsProps) {
+export function TechnologyMarkets({ areas, closing, description, eyebrow, title }: TechnologyMarketsProps) {
   return (
     <section aria-labelledby="technology-title" className="content-section content-section--subtle" id="technology">
       <Container>
@@ -17,6 +17,7 @@ export function TechnologyMarkets({ areas, description, eyebrow, title }: Techno
             </li>
           ))}
         </ul>
+        <p className="technology-list__closing">{closing}</p>
       </Container>
     </section>
   );

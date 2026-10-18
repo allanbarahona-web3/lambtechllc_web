@@ -1,10 +1,12 @@
 {
   "logoAlt": "LAMBTECH Integrated Technologies",
   "tagline": "Connecting Global Technology with Latin American Opportunity.",
-  "location": "Wyoming, USA",
   "navigationTitle": "Explore",
   "legalTitle": "Legal",
+  "socialTitle": "Social channels",
   "whatWeDo": "What We Do", "technology": "Technology", "about": "About", "contact": "Let's Talk",
   "privacy": "Privacy Policy", "terms": "Terms of Use", "cookies": "Cookie Policy",
+  "contactDetails": { "email": "Email", "phone": "Phone", "address": "Business address", "whatsapp": "Chat on WhatsApp" },
+  "social": { "linkedin": "Visit LAMBTECH on LinkedIn", "facebook": "Visit LAMBTECH on Facebook", "instagram": "Visit LAMBTECH on Instagram", "youtube": "Visit LAMBTECH on YouTube", "whatsapp": "Chat with LAMBTECH on WhatsApp" },
   "copyright": "© 2026 LAMBTECH LLC"
 }
