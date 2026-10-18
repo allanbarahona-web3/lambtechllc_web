@@ -1,8 +1,8 @@
 import { notFound } from "next/navigation";
-import { LocaleSwitcher } from "@/components/i18n/locale-switcher";
 import { ButtonLink } from "@/components/design-system/button-link";
 import { Container } from "@/components/design-system/container";
 import { SectionHeading } from "@/components/design-system/section-heading";
+import { CorporateHeader } from "@/components/site/corporate-header";
 import { isLocale } from "@/lib/i18n/config";
 import { getTranslation } from "@/lib/i18n/server";
 
@@ -21,16 +21,22 @@ export default async function LocalePreviewPage({ params }: LocalePageProps) {
 
   return (
     <>
-      <header className="locale-preview-bar">
-        <Container>
-          <LocaleSwitcher
-            currentLocale={locale}
-            englishLabel={t("languageSwitcher.english")}
-            label={t("languageSwitcher.label")}
-            spanishLabel={t("languageSwitcher.spanish")}
-          />
-        </Container>
-      </header>
+      <CorporateHeader
+        currentLocale={locale}
+        labels={{
+          about: t("header.navigation.about"),
+          contact: t("header.navigation.contact"),
+          english: t("languageSwitcher.english"),
+          language: t("languageSwitcher.label"),
+          logoAlt: t("header.logoAlt"),
+          menuClose: t("header.menu.close"),
+          menuOpen: t("header.menu.open"),
+          navigation: t("header.navigation.label"),
+          spanish: t("languageSwitcher.spanish"),
+          technology: t("header.navigation.technology"),
+          whatWeDo: t("header.navigation.whatWeDo"),
+        }}
+      />
       <main className="design-preview" id="main-content">
         <section className="design-preview__intro" aria-labelledby="preview-title">
           <Container>

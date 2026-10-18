@@ -3,10 +3,12 @@ import type { Locale } from "@/lib/i18n/config";
 
 type LocaleSwitcherProps = {
   currentLocale: Locale;
+  englishAccessibleLabel?: string;
   englishLabel: string;
   label: string;
   path?: string;
   spanishLabel: string;
+  spanishAccessibleLabel?: string;
 };
 
 function getLocalePath(locale: Locale, path = "") {
@@ -17,14 +19,16 @@ function getLocalePath(locale: Locale, path = "") {
 
 export function LocaleSwitcher({
   currentLocale,
+  englishAccessibleLabel,
   englishLabel,
   label,
   path,
   spanishLabel,
+  spanishAccessibleLabel,
 }: LocaleSwitcherProps) {
-  const options: Array<{ label: string; locale: Locale }> = [
-    { label: englishLabel, locale: "en" },
-    { label: spanishLabel, locale: "es" },
+  const options: Array<{ accessibleLabel?: string; label: string; locale: Locale }> = [
+    { accessibleLabel: englishAccessibleLabel, label: englishLabel, locale: "en" },
+    { accessibleLabel: spanishAccessibleLabel, label: spanishLabel, locale: "es" },
   ];
 
   return (
@@ -34,6 +38,7 @@ export function LocaleSwitcher({
           <li key={option.locale}>
             <Link
               aria-current={option.locale === currentLocale ? "page" : undefined}
+              aria-label={option.accessibleLabel}
               href={getLocalePath(option.locale, path)}
               hrefLang={option.locale}
               lang={option.locale}

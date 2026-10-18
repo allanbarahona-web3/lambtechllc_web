@@ -11,6 +11,20 @@
     "english": "English (EN)",
     "spanish": "Spanish (ES)"
   },
+  "header": {
+    "logoAlt": "LAMBTECH Integrated Technologies",
+    "menu": {
+      "open": "Open navigation menu",
+      "close": "Close navigation menu"
+    },
+    "navigation": {
+      "label": "Primary navigation",
+      "whatWeDo": "What We Do",
+      "technology": "Technology",
+      "about": "About",
+      "contact": "Let's Talk"
+    }
+  },
   "intro": {
     "eyebrow": "LAMBTECH LLC",
     "title": "Design system preview",
