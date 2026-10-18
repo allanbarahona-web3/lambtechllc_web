@@ -61,16 +61,15 @@ const social = {
 
 export const publicCompany = {
   address: optionalValue(process.env.NEXT_PUBLIC_COMPANY_ADDRESS),
-  companyStatus: optionalValue(process.env.NEXT_PUBLIC_COMPANY_STATUS) ?? "Active",
   email: publicEmail(process.env.NEXT_PUBLIC_COMPANY_EMAIL),
   fax: publicTelephone(process.env.NEXT_PUBLIC_COMPANY_FAX, process.env.NEXT_PUBLIC_COMPANY_FAX_E164),
-  jurisdiction: optionalValue(process.env.NEXT_PUBLIC_COMPANY_JURISDICTION) ?? "Wyoming, USA",
+  jurisdiction: optionalValue(process.env.NEXT_PUBLIC_COMPANY_JURISDICTION),
   media: {
-    heroImageUrl:
-      publicHttpUrl(process.env.NEXT_PUBLIC_LAMBTECH_HERO_IMAGE_URL) ??
-      "https://barmentech-saas.atl1.digitaloceanspaces.com/LAMBTECH-WEBSIDE/Hero%20Desktop%20Lambtech%20Web.svg",
+    faviconUrl: publicHttpUrl(process.env.NEXT_PUBLIC_FAVICON_URL),
+    footerLogoUrl: publicHttpUrl(process.env.NEXT_PUBLIC_FOOTER_LOGO_URL),
+    heroImageUrl: publicHttpUrl(process.env.NEXT_PUBLIC_LAMBTECH_HERO_IMAGE_URL),
   },
-  name: optionalValue(process.env.NEXT_PUBLIC_COMPANY_NAME) ?? "LAMBTECH LLC",
+  name: optionalValue(process.env.NEXT_PUBLIC_COMPANY_NAME),
   partnerLogos: partnerLogos(process.env.NEXT_PUBLIC_PARTNER_LOGOS),
   phone: publicTelephone(process.env.NEXT_PUBLIC_COMPANY_PHONE, process.env.NEXT_PUBLIC_COMPANY_PHONE_E164),
   social,

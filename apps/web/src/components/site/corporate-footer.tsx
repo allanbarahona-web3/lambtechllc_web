@@ -15,6 +15,7 @@ type CorporateFooterProps = {
     contactDetails: { address: string; email: string; fax: string; phone: string; whatsapp: string };
     cookies: string;
     copyright: string;
+    footerLogoMissing: string;
     legalTitle: string;
     logoAlt: string;
     navigationTitle: string;
@@ -41,9 +42,11 @@ export function CorporateFooter({ currentLocale, labels }: CorporateFooterProps)
       <Container>
         <div className="site-footer__grid">
           <div className="site-footer__brand">
-            <Link aria-label={labels.logoAlt} className="site-footer__logo" href={`/${currentLocale}`}>
-              <Image alt={labels.logoAlt} height={713} src="/LogoColor.png" width={2206} />
-            </Link>
+            {publicCompany.media.footerLogoUrl ? (
+              <Link aria-label={labels.logoAlt} className="site-footer__logo" href={`/${currentLocale}`}>
+                <Image alt={labels.logoAlt} height={725} src={publicCompany.media.footerLogoUrl} width={2170} />
+              </Link>
+            ) : <p className="site-footer__asset-notice">{labels.footerLogoMissing}</p>}
             <p>{labels.tagline}</p>
             <p>{publicCompany.jurisdiction}</p>
             <SocialLinks label={labels.socialTitle} labels={labels.social} links={publicCompany.social} />

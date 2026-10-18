@@ -849,14 +849,18 @@ section[id] {
 .site-footer__logo {
   display: inline-flex;
   width: fit-content;
-  padding: 0.4375rem 0.625rem;
-  border-radius: var(--radius-control);
-  background: var(--color-surface-subtle);
 }
 
 .site-footer__logo img {
-  width: 9.5rem;
+  width: 11.5rem;
   height: auto;
+}
+
+.site-footer__asset-notice {
+  max-width: 16rem;
+  color: rgb(255 255 255 / 72%);
+  font-size: 0.875rem;
+  line-height: 1.5;
 }
 
 .site-footer__brand p {

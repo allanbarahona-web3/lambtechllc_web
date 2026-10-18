@@ -1,5 +1,6 @@
 {
   "logoAlt": "LAMBTECH Tecnologías Integradas",
+  "footerLogoMissing": "El logotipo del pie de página requiere NEXT_PUBLIC_FOOTER_LOGO_URL.",
   "tagline": "Conectamos la tecnología global con las oportunidades de América Latina.",
   "navigationTitle": "Explorar",
   "legalTitle": "Legal",

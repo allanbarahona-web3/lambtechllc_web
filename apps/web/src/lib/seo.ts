@@ -1,15 +1,14 @@
 import type { Metadata } from "next";
+import { publicCompany } from "@/config/public-company";
 import { defaultLocale, locales, type Locale } from "./i18n/config";
 
 function getMetadataBase() {
-  const siteUrl = process.env.SITE_URL;
-
-  if (!siteUrl) {
+  if (!publicCompany.website) {
     return undefined;
   }
 
   try {
-    return new URL(siteUrl);
+    return new URL(publicCompany.website);
   } catch {
     return undefined;
   }
@@ -34,6 +33,12 @@ export function getLocaleMetadata(
       },
     },
     description,
+    icons: publicCompany.media.faviconUrl
+      ? {
+          icon: [{ type: "image/png", url: publicCompany.media.faviconUrl }],
+          shortcut: [{ type: "image/png", url: publicCompany.media.faviconUrl }],
+        }
+      : undefined,
     metadataBase: getMetadataBase(),
     title,
   };
