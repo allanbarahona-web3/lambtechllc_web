@@ -51,9 +51,8 @@ export function ContactForm({ labels }: { labels: ContactFormLabels }) {
         <Field error={errors.email} label={labels.email} name="email" requiredLabel={labels.required} required type="email" />
         <Field label={labels.country} name="country" />
         <Field error={errors.message} label={labels.message} name="message" requiredLabel={labels.required} required textarea />
-        <div aria-hidden="true" className="contact-form__honeypot">
-          <label htmlFor="contact-website">{labels.honeypot}</label>
-          <input autoComplete="off" id="contact-website" name="website" tabIndex={-1} type="text" />
+        <div className="contact-form__honeypot" hidden>
+          <input aria-label={labels.honeypot} autoComplete="off" id="contact-website" name="website" tabIndex={-1} type="text" />
         </div>
       </div>
       <div className="contact-form__actions">

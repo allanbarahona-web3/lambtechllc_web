@@ -39,7 +39,7 @@ export default async function LocalePage({ params }: LocalePageProps) {
           eyebrow: hero("eyebrow"), headline: hero("headline"), mediaAlt: hero("mediaAlt"),
           primaryCta: hero("primaryCta"), secondaryCta: hero("secondaryCta"),
         }} />
-        <HomeIntroduction copy={introduction("copy")} />
+        <HomeIntroduction copy={introduction("copy")} label={introduction("label")} />
         <WhatWeDo description={whatWeDo("description")} eyebrow={whatWeDo("eyebrow")} items={whatWeDo("items", { returnObjects: true }) as unknown as Service[]} title={whatWeDo("title")} />
         <TechnologyMarkets areas={technology("areas", { returnObjects: true }) as unknown as Array<Omit<Service, "number">>} description={technology("description")} eyebrow={technology("eyebrow")} title={technology("title")} />
         <OurApproach description={approach("description")} eyebrow={approach("eyebrow")} steps={approach("steps", { returnObjects: true }) as unknown as Service[]} title={approach("title")} />
