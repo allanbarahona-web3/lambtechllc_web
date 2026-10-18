@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+:root {
+  --color-teal: #007e80;
+  --color-charcoal: #333842;
+  --color-white: #ffffff;
+  --color-surface-subtle: #f5f7f7;
+  --color-border: #d6ddde;
+  --color-text-secondary: #59616d;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: var(--color-white);
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  background: var(--color-white);
+  color: var(--color-charcoal);
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+:focus-visible {
+  outline: 3px solid var(--color-teal);
+  outline-offset: 3px;
+}
+
+.foundation {
+  display: grid;
+  min-height: 100vh;
+  align-content: center;
+  gap: 1rem;
+  max-width: 48rem;
+  padding: 2rem;
+}
+
+.foundation__eyebrow {
+  margin: 0;
+  color: var(--color-teal);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.foundation h1,
+.foundation p {
+  margin: 0;
+}
+
+.foundation h1 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  letter-spacing: -0.04em;
+  line-height: 1;
+}
+
+.foundation p:not(.foundation__eyebrow) {
+  max-width: 38rem;
+  color: var(--color-text-secondary);
+  font-size: 1rem;
+  line-height: 1.6;
+}
