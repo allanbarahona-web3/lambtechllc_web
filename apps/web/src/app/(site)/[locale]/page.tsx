@@ -40,9 +40,7 @@ export default async function LocalePreviewPage({ params }: LocalePageProps) {
           labels={{
             eyebrow: t("hero.eyebrow"),
             headline: t("hero.headline"),
-            mediaDescription: t("hero.media.description"),
-            mediaLabel: t("hero.media.label"),
-            mediaTitle: t("hero.media.title"),
+            mediaAlt: t("hero.mediaAlt"),
             primaryCta: t("hero.primaryCta"),
             secondaryCta: t("hero.secondaryCta"),
             supportingCopy: t("hero.supportingCopy"),
