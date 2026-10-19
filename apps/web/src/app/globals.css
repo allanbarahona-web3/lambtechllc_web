@@ -1392,6 +1392,37 @@ section[id] {
   margin-top: var(--space-6);
 }
 
+.editorial-inline-action {
+  margin-top: var(--space-5);
+}
+
+.technology-context-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-top: clamp(var(--space-7), 6vw, var(--space-8));
+  border-top: var(--border-width) solid var(--color-border-subtle);
+  border-left: var(--border-width) solid var(--color-border-subtle);
+}
+
+.technology-context-list article {
+  display: grid;
+  gap: var(--space-4);
+  min-width: 0;
+  padding: var(--space-6);
+  border-right: var(--border-width) solid var(--color-border-subtle);
+  border-bottom: var(--border-width) solid var(--color-border-subtle);
+}
+
+.technology-context-list p {
+  color: var(--color-text-secondary);
+}
+
+.technology-context-list a {
+  width: fit-content;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
 .internal-page__cta {
   padding-block: clamp(var(--space-7), 7vw, var(--space-9));
   border-top: var(--border-width) solid var(--color-border-subtle);
@@ -1445,6 +1476,10 @@ section[id] {
   .editorial-split,
   .technology-category {
     grid-template-columns: repeat(8, minmax(0, 1fr));
+  }
+
+  .technology-context-list {
+    grid-template-columns: 1fr;
   }
 
   .editorial-split > :first-child,
