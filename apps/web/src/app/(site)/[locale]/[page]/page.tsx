@@ -6,6 +6,7 @@ import { CorporateHeader } from "@/components/site/corporate-header";
 import { CorporatePageFoundation } from "@/components/site/corporate-page-foundation";
 import { LegalPage } from "@/components/site/legal-page";
 import { publicCompany } from "@/config/public-company";
+import { TechnologyPage, type TechnologyPageContent } from "@/features/technology/technology-page";
 import { WhatWeDoPage, type WhatWeDoPageContent } from "@/features/what-we-do/what-we-do-page";
 import { isLocale, locales, type Locale } from "@/lib/i18n/config";
 import { getTranslation } from "@/lib/i18n/server";
@@ -80,6 +81,11 @@ export async function generateMetadata({ params }: LocalizedPageProps): Promise<
     return getLocaleMetadata(locale, t("metadata.title"), t("metadata.description"), page, { noIndex: true });
   }
 
+  if (page === "technology") {
+    const t = await getTranslation(locale, "technologyPage");
+    return getLocaleMetadata(locale, t("metadata.title"), t("metadata.description"), page, { noIndex: true });
+  }
+
   const t = await getTranslation(locale, "pageFoundation");
   return getLocaleMetadata(locale, t(`pages.${page}.title`), t(`pages.${page}.description`), page, { noIndex: true });
 }
@@ -92,11 +98,12 @@ export default async function LocalizedPage({ params }: LocalizedPageProps) {
   const { locale, page } = await params;
   if (!isRoute(locale, page)) notFound();
 
-  const [common, footer, legal, pageFoundation, whatWeDoPage] = await Promise.all([
+  const [common, footer, legal, pageFoundation, technologyPage, whatWeDoPage] = await Promise.all([
     getTranslation(locale, "common"),
     getTranslation(locale, "footer"),
     getTranslation(locale, "legal"),
     getTranslation(locale, "pageFoundation"),
+    getTranslation(locale, "technologyPage"),
     getTranslation(locale, "whatWeDoPage"),
   ]);
   const currentPage: CorporateRouteId | undefined = isCorporateRoute(page) ? page : undefined;
@@ -123,6 +130,22 @@ export default async function LocalizedPage({ params }: LocalizedPageProps) {
           media={{
             introduction: publicCompany.media.whatWeDoIntroImageUrl,
             supporting: publicCompany.media.whatWeDoSupportingImageUrl,
+          }}
+        />
+      ) : page === "technology" ? (
+        <TechnologyPage
+          content={{
+            categories: technologyPage("categories", { returnObjects: true }) as unknown as TechnologyPageContent["categories"],
+            cta: technologyPage("cta", { returnObjects: true }) as unknown as TechnologyPageContent["cta"],
+            introduction: technologyPage("introduction", { returnObjects: true }) as unknown as TechnologyPageContent["introduction"],
+          }}
+          currentLocale={locale}
+          media={{
+            connected: publicCompany.media.technologyConnectedImageUrl,
+            gas: publicCompany.media.technologyGasImageUrl,
+            industrial: publicCompany.media.technologyIndustrialImageUrl,
+            introduction: publicCompany.media.technologyIntroImageUrl,
+            water: publicCompany.media.technologyWaterImageUrl,
           }}
         />
       ) : (

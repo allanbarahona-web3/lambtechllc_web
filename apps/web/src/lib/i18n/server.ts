@@ -9,6 +9,7 @@ import enLegal from "@/locales/en/legal.json";
 import enPageFoundation from "@/locales/en/page-foundation.json";
 import enPartners from "@/locales/en/partners.json";
 import enTechnology from "@/locales/en/technology.json";
+import enTechnologyPage from "@/locales/en/technology-page.json";
 import enWhatWeDo from "@/locales/en/what-we-do.json";
 import enWhatWeDoPage from "@/locales/en/what-we-do-page.json";
 import esApproach from "@/locales/es/approach.json";
@@ -21,6 +22,7 @@ import esLegal from "@/locales/es/legal.json";
 import esPageFoundation from "@/locales/es/page-foundation.json";
 import esPartners from "@/locales/es/partners.json";
 import esTechnology from "@/locales/es/technology.json";
+import esTechnologyPage from "@/locales/es/technology-page.json";
 import esWhatWeDo from "@/locales/es/what-we-do.json";
 import esWhatWeDoPage from "@/locales/es/what-we-do-page.json";
 import type { Locale } from "./config";
@@ -37,6 +39,7 @@ const resources = {
     pageFoundation: enPageFoundation,
     partners: enPartners,
     technology: enTechnology,
+    technologyPage: enTechnologyPage,
     whatWeDo: enWhatWeDo,
     whatWeDoPage: enWhatWeDoPage,
   },
@@ -51,6 +54,7 @@ const resources = {
     pageFoundation: esPageFoundation,
     partners: esPartners,
     technology: esTechnology,
+    technologyPage: esTechnologyPage,
     whatWeDo: esWhatWeDo,
     whatWeDoPage: esWhatWeDoPage,
   },

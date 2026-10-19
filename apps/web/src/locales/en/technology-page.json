@@ -1,0 +1,85 @@
+{
+  "metadata": {
+    "title": "Technology Applications | LAMBTECH LLC",
+    "description": "Application-led technology contexts for water infrastructure, gas and energy, industrial instrumentation and connected technologies."
+  },
+  "introduction": {
+    "eyebrow": "Technology",
+    "title": "Technology begins with the operating context.",
+    "description": "LAMBTECH organizes the conversation around practical industrial and infrastructure applications, then helps identify specialized international technology that may be relevant to the requirement.",
+    "mediaAlt": "Editorial media area for specialized industrial technology applications.",
+    "mediaFallback": "Approved Technology editorial media pending",
+    "mediaCaption": "A future image here should show authentic equipment, instrumentation or industrial application context—not a product catalogue."
+  },
+  "categories": [
+    {
+      "id": "water",
+      "eyebrow": "01 — Water & infrastructure",
+      "title": "Water systems where measurement and control matter.",
+      "copy": "Relevant contexts include water networks and infrastructure applications where flow, pressure, control and monitoring must be considered together.",
+      "items": [
+        "Ultrasonic water meters",
+        "Electromagnetic flow meters",
+        "Hydraulic valves and pressure management",
+        "Leak detection and water-quality contexts",
+        "Telemetry and remote monitoring"
+      ],
+      "mediaAlt": "Editorial media area for water and infrastructure technology.",
+      "mediaFallback": "Approved Water & Infrastructure media pending",
+      "mediaCaption": "Future media: approved water-network, flow-measurement or hydraulic-control application photography."
+    },
+    {
+      "id": "gas",
+      "eyebrow": "02 — Gas, biogas & energy",
+      "title": "Measurement and analysis for energy and process environments.",
+      "copy": "These are technology and application contexts for gas, biogas and energy conversations, not a statement that every instrument or service is available in every market.",
+      "items": [
+        "Gas measurement and industrial instrumentation",
+        "Biogas analysis and biomethane contexts",
+        "Combustion and emissions analysis",
+        "Industrial process monitoring",
+        "Relevant measurement and control requirements"
+      ],
+      "mediaAlt": "Editorial media area for gas, biogas and energy technology.",
+      "mediaFallback": "Approved Gas, Biogas & Energy media pending",
+      "mediaCaption": "Future media: approved gas analysis, combustion or energy-process application photography."
+    },
+    {
+      "id": "industrial",
+      "eyebrow": "03 — Industrial instrumentation",
+      "title": "Industrial technology framed around the process.",
+      "copy": "Technology conversations can include the measurement, sensing, control and tooling requirements that support industrial processes and infrastructure operations.",
+      "items": [
+        "Control valves and industrial instrumentation",
+        "Sensors and measurement systems",
+        "Radar and ultrasonic level measurement",
+        "Automation and process control",
+        "Professional industrial and pipe tools"
+      ],
+      "mediaAlt": "Editorial media area for industrial instrumentation and process control.",
+      "mediaFallback": "Approved Industrial Instrumentation media pending",
+      "mediaCaption": "Future media: approved instrumentation, valve, measurement or industrial-tool photography."
+    },
+    {
+      "id": "connected",
+      "eyebrow": "04 — Connected technologies",
+      "title": "Connect field context with operational visibility.",
+      "copy": "SCADA, RTUs, IoT, dataloggers, telemetry and data platforms are relevant application contexts. They are not presented here as a proprietary LAMBTECH SaaS portfolio.",
+      "items": [
+        "SCADA and industrial telemetry contexts",
+        "RTUs, dataloggers and IoT applications",
+        "Remote monitoring considerations",
+        "Data-platform and integration contexts",
+        "Operational visibility for industrial environments"
+      ],
+      "mediaAlt": "Editorial media area for connected industrial technologies.",
+      "mediaFallback": "Approved Connected Technologies media pending",
+      "mediaCaption": "Future media: approved SCADA, telemetry, RTU or connected-technology application photography."
+    }
+  ],
+  "cta": {
+    "title": "Start with the application context, not a catalogue.",
+    "primary": "Find technology",
+    "secondary": "Let's talk"
+  }
+}
