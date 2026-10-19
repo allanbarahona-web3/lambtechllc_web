@@ -1,12 +1,12 @@
 {
   "eyebrow": "Tecnología y mercados",
   "title": "Contextos tecnológicos que requieren una búsqueda cuidadosa.",
-  "description": "LAMBTECH no opera un catálogo de productos. Estos son contextos de aplicación para conversaciones técnicas y comerciales.",
+  "description": "Estos contextos de aplicación ayudan a estructurar conversaciones técnicas y comerciales sobre tecnología especializada.",
   "closing": "El punto de partida es el contexto de aplicación: condiciones operativas, requisitos técnicos y la ruta comercial necesaria para evaluar una conversación tecnológica relevante.",
   "areas": [
     { "title": "Agua e Infraestructura", "copy": "Redes de agua, válvulas, medición de caudal, monitoreo y aplicaciones de infraestructura." },
     { "title": "Gas, Biogás y Energía", "copy": "Procesos de gas y biogás, sistemas de energía y contextos de medición y control." },
     { "title": "Instrumentación Industrial", "copy": "Instrumentación, medidores de caudal, automatización, RTUs, SCADA y herramientas industriales." },
-    { "title": "Tecnologías Conectadas", "copy": "Contextos de monitoreo conectado e IoT; no se representa un portafolio SaaS independiente." }
+    { "title": "Tecnologías Conectadas", "copy": "Contextos de monitoreo conectado e IoT para requerimientos industriales y de infraestructura." }
   ]
 }

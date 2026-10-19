@@ -9,7 +9,7 @@
     "description": "LAMBTECH organizes the conversation around practical industrial and infrastructure applications, then helps identify specialized international technology that may be relevant to the requirement.",
     "mediaAlt": "Editorial media area for specialized industrial technology applications.",
     "mediaFallback": "Approved Technology editorial media pending",
-    "mediaCaption": "A future image here should show authentic equipment, instrumentation or industrial application context—not a product catalogue."
+    "mediaCaption": "A future image here should show authentic equipment, instrumentation or industrial application context."
   },
   "categories": [
     {
@@ -32,7 +32,7 @@
       "id": "gas",
       "eyebrow": "02 — Gas, biogas & energy",
       "title": "Measurement and analysis for energy and process environments.",
-      "copy": "These are technology and application contexts for gas, biogas and energy conversations, not a statement that every instrument or service is available in every market.",
+      "copy": "Gas, biogas and energy conversations are organized around the measurement, analysis and process conditions that define each technical and commercial requirement.",
       "items": [
         "Gas measurement and industrial instrumentation",
         "Biogas analysis and biomethane contexts",
@@ -64,7 +64,7 @@
       "id": "connected",
       "eyebrow": "04 — Connected technologies",
       "title": "Connect field context with operational visibility.",
-      "copy": "SCADA, RTUs, IoT, dataloggers, telemetry and data platforms are relevant application contexts. They are not presented here as a proprietary LAMBTECH SaaS portfolio.",
+      "copy": "SCADA, RTUs, IoT, dataloggers, telemetry and data platforms provide useful contexts for connecting field information with operational visibility.",
       "items": [
         "SCADA and industrial telemetry contexts",
         "RTUs, dataloggers and IoT applications",
@@ -78,7 +78,7 @@
     }
   ],
   "cta": {
-    "title": "Start with the application context, not a catalogue.",
+    "title": "Start with the application context.",
     "primary": "Find technology",
     "secondary": "Let's talk"
   }

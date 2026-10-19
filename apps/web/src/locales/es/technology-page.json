@@ -9,7 +9,7 @@
     "description": "LAMBTECH organiza la conversación alrededor de aplicaciones prácticas de industria e infraestructura, y luego ayuda a identificar tecnología internacional especializada que pueda ser relevante para el requerimiento.",
     "mediaAlt": "Área de media editorial para aplicaciones de tecnología industrial especializada.",
     "mediaFallback": "Media editorial aprobada para Tecnología pendiente",
-    "mediaCaption": "Una futura imagen debe mostrar equipos, instrumentación o contexto industrial auténtico; no un catálogo de productos."
+    "mediaCaption": "Una futura imagen debe mostrar equipos, instrumentación o contexto industrial auténtico."
   },
   "categories": [
     {
@@ -32,7 +32,7 @@
       "id": "gas",
       "eyebrow": "02 — Gas, biogás y energía",
       "title": "Medición y análisis para entornos de energía y proceso.",
-      "copy": "Son contextos tecnológicos y de aplicación para conversaciones sobre gas, biogás y energía; no una afirmación de que cada instrumento o servicio esté disponible en todos los mercados.",
+      "copy": "Las conversaciones sobre gas, biogás y energía se organizan alrededor de las condiciones de medición, análisis y proceso que definen cada requerimiento técnico y comercial.",
       "items": [
         "Medición de gas e instrumentación industrial",
         "Contextos de análisis de biogás y biometano",
@@ -64,7 +64,7 @@
       "id": "connected",
       "eyebrow": "04 — Tecnologías conectadas",
       "title": "Conectar el contexto de campo con visibilidad operativa.",
-      "copy": "SCADA, RTUs, IoT, dataloggers, telemetría y plataformas de datos son contextos de aplicación relevantes. No se presentan aquí como un portafolio SaaS propietario de LAMBTECH.",
+      "copy": "SCADA, RTUs, IoT, dataloggers, telemetría y plataformas de datos aportan contextos útiles para conectar información de campo con visibilidad operativa.",
       "items": [
         "Contextos de SCADA y telemetría industrial",
         "Aplicaciones de RTUs, dataloggers e IoT",
@@ -78,7 +78,7 @@
     }
   ],
   "cta": {
-    "title": "Comience por el contexto de aplicación, no por un catálogo.",
+    "title": "Comience por el contexto de aplicación.",
     "primary": "Encontrar tecnología",
     "secondary": "Hablemos"
   }

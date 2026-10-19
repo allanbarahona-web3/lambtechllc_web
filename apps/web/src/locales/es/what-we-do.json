@@ -5,6 +5,6 @@
   "items": [
     { "number": "01", "title": "Abastecimiento Internacional", "copy": "Enmarcamos la necesidad de aplicación, identificamos opciones internacionales relevantes y coordinamos una ruta de abastecimiento más informada para contextos industriales y de infraestructura." },
     { "number": "02", "title": "Desarrollo de Mercado LATAM", "copy": "Ayudamos a los fabricantes a evaluar el contexto comercial, identificar conversaciones adecuadas y desarrollar rutas relevantes hacia mercados latinoamericanos." },
-    { "number": "03", "title": "Soluciones Tecnológicas", "copy": "Conectamos tecnologías apropiadas con casos de uso de agua, energía, infraestructura e industria, sin reducir la conversación a un catálogo." }
+    { "number": "03", "title": "Soluciones Tecnológicas", "copy": "Conectamos tecnologías apropiadas con contextos de aplicación de agua, energía, infraestructura e industria." }
   ]
 }

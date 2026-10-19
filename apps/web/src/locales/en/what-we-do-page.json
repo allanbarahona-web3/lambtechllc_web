@@ -26,7 +26,7 @@
   },
   "process": {
     "title": "A disciplined procurement sequence.",
-    "description": "This is an illustrative model for structuring a technology conversation; it does not represent a public record of completed projects.",
+    "description": "A structured sequence that organizes a technology-sourcing conversation from the requirement through commercial coordination.",
     "steps": [
       { "number": "01", "title": "Identify", "copy": "Clarify the technology need and identify relevant suppliers." },
       { "number": "02", "title": "Qualify", "copy": "Review the technical and commercial fit of the available options." },
@@ -68,18 +68,18 @@
       "Sourcing aligned with a specific requirement",
       "Commercial terms defined for each opportunity",
       "Coordination between international suppliers and regional demand",
-      "No public product catalogue or universal availability claim"
+      "Commercial alignment for the defined opportunity"
     ]
   },
   "solutions": {
     "eyebrow": "05 — Technology solutions",
     "title": "Connect technology with the real application context.",
-    "description": "LAMBTECH's role is to connect specialized technologies with requirements in water, infrastructure, energy and industry—not to present itself as the manufacturer or local installation contractor.",
+    "description": "LAMBTECH brings international technology sourcing and commercial coordination into conversations around water, infrastructure, energy and industry requirements.",
     "items": [
       "Application-led technology conversations",
       "Industrial and infrastructure requirements",
       "Technical and commercial context before supplier selection",
-      "Clear boundaries between international sourcing and local execution"
+      "Coordination between international sourcing and local execution"
     ],
     "mediaAlt": "Editorial media area for industrial and infrastructure technology applications.",
     "mediaFallback": "Approved supporting editorial media pending",

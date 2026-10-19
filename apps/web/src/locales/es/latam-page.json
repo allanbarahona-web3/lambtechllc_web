@@ -37,7 +37,7 @@
   "technology": {
     "eyebrow": "03 — Aplicaciones tecnológicas",
     "title": "Explore la tecnología a partir del contexto de aplicación.",
-    "description": "El enfoque está en áreas de tecnología especializada que pueden informar una conversación industrial o de infraestructura; no en un catálogo público de productos.",
+    "description": "El enfoque está en áreas de tecnología especializada que ayudan a estructurar una conversación productiva de industria o infraestructura.",
     "linkLabel": "Explorar tecnología",
     "items": [
       { "id": "water", "title": "Agua e infraestructura", "copy": "Contextos de medición, control hidráulico, detección de fugas, calidad de agua y monitoreo remoto." },

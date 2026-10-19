@@ -25,7 +25,8 @@ export function PublicMediaFrame({
   if (!src) {
     return (
       <div aria-label={fallbackLabel} className={`${classes} public-media-frame--placeholder`} role="img" style={style}>
-        <span>{fallbackLabel}</span>
+        <span aria-hidden="true" className="public-media-frame__placeholder-mark" />
+        <span className="sr-only">{fallbackLabel}</span>
       </div>
     );
   }

@@ -37,7 +37,7 @@
   "technology": {
     "eyebrow": "03 — Technology applications",
     "title": "Explore technology through the application context.",
-    "description": "The focus is on specialized technology areas that can inform an industrial or infrastructure conversation—not on a public product catalogue.",
+    "description": "The focus is on specialized technology areas that help frame a productive industrial or infrastructure conversation.",
     "linkLabel": "Explore technology",
     "items": [
       { "id": "water", "title": "Water & infrastructure", "copy": "Measurement, hydraulic control, leak detection, water quality and remote-monitoring contexts." },

@@ -26,7 +26,7 @@
   },
   "process": {
     "title": "Una secuencia disciplinada de abastecimiento.",
-    "description": "Es un modelo ilustrativo para estructurar una conversación tecnológica; no representa un registro público de proyectos realizados.",
+    "description": "Una secuencia estructurada que organiza la conversación de búsqueda tecnológica desde el requerimiento hasta la coordinación comercial.",
     "steps": [
       { "number": "01", "title": "Identificar", "copy": "Aclarar la necesidad tecnológica e identificar proveedores relevantes." },
       { "number": "02", "title": "Calificar", "copy": "Revisar el ajuste técnico y comercial de las opciones disponibles." },
@@ -68,18 +68,18 @@
       "Abastecimiento alineado con un requerimiento específico",
       "Condiciones comerciales definidas para cada oportunidad",
       "Coordinación entre proveedores internacionales y demanda regional",
-      "Sin catálogo público ni afirmación de disponibilidad universal"
+      "Alineación comercial para la oportunidad definida"
     ]
   },
   "solutions": {
     "eyebrow": "05 — Soluciones tecnológicas",
     "title": "Conectar la tecnología con el contexto real de aplicación.",
-    "description": "El rol de LAMBTECH es conectar tecnologías especializadas con requisitos de agua, infraestructura, energía e industria; no presentarse como fabricante ni contratista local de instalación.",
+    "description": "LAMBTECH incorpora la búsqueda de tecnología internacional y la coordinación comercial en conversaciones sobre requerimientos de agua, infraestructura, energía e industria.",
     "items": [
       "Conversaciones tecnológicas guiadas por la aplicación",
       "Requerimientos industriales y de infraestructura",
       "Contexto técnico y comercial previo a la selección de proveedor",
-      "Límites claros entre abastecimiento internacional y ejecución local"
+      "Coordinación entre abastecimiento internacional y ejecución local"
     ],
     "mediaAlt": "Área de media editorial para aplicaciones tecnológicas industriales y de infraestructura.",
     "mediaFallback": "Media editorial complementaria aprobada pendiente",
