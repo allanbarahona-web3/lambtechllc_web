@@ -1,10 +1,10 @@
 {
   "eyebrow": "Qué hacemos",
-  "title": "Tres formas de crear conexión comercial.",
-  "description": "Un rol internacional enfocado para fabricantes y empresas que necesitan rutas más claras entre tecnología especializada y contexto real de aplicación.",
+  "title": "Tres formas de conectar la tecnología con la oportunidad de mercado.",
+  "description": "LAMBTECH apoya a fabricantes y empresas que necesitan una ruta más clara entre tecnología especializada, requerimientos comerciales y aplicaciones prácticas.",
   "items": [
-    { "number": "01", "title": "Abastecimiento Internacional", "copy": "Enmarcamos la necesidad de aplicación, identificamos opciones internacionales relevantes y coordinamos una ruta de abastecimiento más informada para contextos industriales y de infraestructura." },
-    { "number": "02", "title": "Desarrollo de Mercado LATAM", "copy": "Ayudamos a los fabricantes a evaluar el contexto comercial, identificar conversaciones adecuadas y desarrollar rutas relevantes hacia mercados latinoamericanos." },
-    { "number": "03", "title": "Soluciones Tecnológicas", "copy": "Conectamos tecnologías apropiadas con contextos de aplicación de agua, energía, infraestructura e industria." }
+    { "number": "01", "title": "Abastecimiento Internacional", "copy": "Definimos la necesidad de aplicación, identificamos opciones internacionales de suministro y coordinamos el abastecimiento para requerimientos industriales y de infraestructura." },
+    { "number": "02", "title": "Desarrollo de Mercados en América Latina", "copy": "Ayudamos a los fabricantes a evaluar oportunidades de mercado, identificar canales adecuados y desarrollar rutas hacia mercados latinoamericanos." },
+    { "number": "03", "title": "Soluciones Tecnológicas", "copy": "Conectamos tecnologías especializadas con aplicaciones de agua, energía, infraestructura e industria." }
   ]
 }

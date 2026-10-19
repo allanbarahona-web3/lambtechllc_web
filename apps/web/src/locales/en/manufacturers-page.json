@@ -1,12 +1,12 @@
 {
   "metadata": {
     "title": "For Manufacturers | LAMBTECH LLC",
-    "description": "Commercial market-development support for specialized technology manufacturers considering opportunities in Latin America."
+    "description": "Market assessment, channel development and commercial coordination for specialized technology manufacturers considering Latin America."
   },
   "introduction": {
     "eyebrow": "For manufacturers",
     "title": "Develop your technology’s presence in Latin America.",
-    "description": "LAMBTECH helps structure the market conversations behind specialized technology: where an application may fit, which commercial paths deserve attention and how international suppliers can coordinate with regional opportunity.",
+    "description": "LAMBTECH helps manufacturers assess applications, market paths and channel options for specialized technology in Latin America.",
     "mediaAlt": "Editorial media area for international technology manufacturers and commercial market development.",
     "mediaFallback": "Approved Manufacturers editorial media pending",
     "mediaCaption": "Future media: authentic, approved photography of industrial technology, technical collaboration or commercial channel development."
@@ -14,44 +14,44 @@
   "opportunities": {
     "eyebrow": "01 — Regional opportunity",
     "title": "Begin with a useful market question.",
-    "description": "A productive entry conversation starts by connecting a manufacturer’s technology with the buyer needs, industrial applications and commercial conditions that may make it relevant in a Latin American market.",
+    "description": "A productive market assessment connects a manufacturer’s technology with buyer requirements, industrial applications and commercial conditions in a Latin American market.",
     "items": [
       "Market intelligence and opportunity qualification",
       "Industrial application and buyer-requirement context",
-      "Technical positioning for a defined commercial conversation",
-      "Identification of opportunities that merit further review"
+      "Technology positioning for a defined market opportunity",
+      "Prioritization of opportunities for further review"
     ]
   },
   "channels": {
     "eyebrow": "02 — Commercial channels",
     "title": "Build the commercial path around the application.",
-    "description": "Channel development can bring together potential distributors, integrators, commercial partners and customers around a clearer understanding of the technology and local market context.",
+    "description": "Channel development can connect potential distributors, integrators, commercial partners and customers with a clear understanding of the technology and local market conditions.",
     "items": [
       "Potential distributor and integrator identification",
-      "Commercial partner and customer-development conversations",
+      "Commercial partner and customer-development coordination",
       "Channel-development coordination",
       "Alignment between manufacturer objectives and local business relationships"
     ]
   },
   "process": {
     "title": "How LAMBTECH works with manufacturers.",
-    "description": "A concise framework for organizing commercial development work. Each opportunity is assessed on its own technical and commercial context.",
+    "description": "A concise framework for organizing market-development work. Each opportunity is assessed against its technical requirements and commercial conditions.",
     "steps": [
-      { "number": "01", "title": "Market understanding", "copy": "Clarify the technology, application and commercial question." },
-      { "number": "02", "title": "Opportunity identification", "copy": "Assess relevant buyer, project and market conversations." },
-      { "number": "03", "title": "Channel development", "copy": "Identify potential commercial paths and relationships." },
-      { "number": "04", "title": "Commercial coordination", "copy": "Support the next conversation between the relevant parties." }
+      { "number": "01", "title": "Market understanding", "copy": "Clarify the technology, application and market requirement." },
+      { "number": "02", "title": "Opportunity identification", "copy": "Assess buyer, project and channel opportunities." },
+      { "number": "03", "title": "Channel development", "copy": "Identify potential distributors, integrators and commercial paths." },
+      { "number": "04", "title": "Commercial coordination", "copy": "Coordinate the next step between the appropriate parties." }
     ]
   },
   "network": {
     "eyebrow": "03 — Technology manufacturer network",
     "title": "Relationships shaped around specialized technology.",
-    "description": "LAMBTECH’s commercial network brings together specialized technology manufacturers and market-development conversations across industrial and infrastructure contexts.",
+    "description": "LAMBTECH’s commercial network includes specialized technology manufacturers serving industrial and infrastructure applications.",
     "logoFallback": "Authorized manufacturer marks pending",
     "pendingNote": "Authorized manufacturer marks will appear here after the supplied brand assets have been verified for identity and approved for website use."
   },
   "cta": {
-    "title": "Discuss the next market-development conversation.",
-    "label": "Talk to LAMBTECH"
+    "title": "Explore a market-development path for your technology.",
+    "label": "Contact LAMBTECH"
   }
 }

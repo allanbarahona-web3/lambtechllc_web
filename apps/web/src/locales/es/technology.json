@@ -1,8 +1,8 @@
 {
   "eyebrow": "Tecnología y mercados",
-  "title": "Contextos tecnológicos que requieren una búsqueda cuidadosa.",
-  "description": "Estos contextos de aplicación ayudan a estructurar conversaciones técnicas y comerciales sobre tecnología especializada.",
-  "closing": "El punto de partida es el contexto de aplicación: condiciones operativas, requisitos técnicos y la ruta comercial necesaria para evaluar una conversación tecnológica relevante.",
+  "title": "Contextos tecnológicos definidos por necesidades operativas reales.",
+  "description": "Estas áreas de aplicación ayudan a estructurar requerimientos técnicos y evaluación comercial para tecnología especializada.",
+  "closing": "Toda evaluación comienza con la aplicación: condiciones operativas, requerimientos técnicos y la ruta comercial necesaria para valorar una opción tecnológica adecuada.",
   "areas": [
     { "title": "Agua e Infraestructura", "copy": "Redes de agua, válvulas, medición de caudal, monitoreo y aplicaciones de infraestructura." },
     { "title": "Gas, Biogás y Energía", "copy": "Procesos de gas y biogás, sistemas de energía y contextos de medición y control." },

@@ -1,18 +1,18 @@
 {
   "eyebrow": "Contact",
-  "title": "Start with the right commercial conversation.",
-  "description": "Select the path that best matches your inquiry. Form delivery will be connected only after the separate backend is approved and available.",
+  "title": "Choose the right route for your inquiry.",
+  "description": "Select the path that best matches your inquiry. Form delivery is not available yet; please use the contact details shown below.",
   "paths": [
-    { "id": "manufacturers", "label": "For manufacturers", "title": "Expand into LATAM", "copy": "Discuss market-development opportunities for specialized technology." },
-    { "id": "customers", "label": "For LATAM customers", "title": "Find technology", "copy": "Share the application context for technology sourcing." },
-    { "id": "general", "label": "General inquiries", "title": "Start a conversation", "copy": "Use this route for an inquiry outside the two primary paths." }
+    { "id": "manufacturers", "label": "For manufacturers", "title": "Expand into Latin America", "copy": "Discuss market assessment, channel development and technology positioning." },
+    { "id": "customers", "label": "For Latin American businesses", "title": "Find technology", "copy": "Share your application or requirement for technology sourcing." },
+    { "id": "general", "label": "General inquiries", "title": "Contact LAMBTECH", "copy": "Use this route for an inquiry outside the two primary paths." }
   ],
   "details": { "email": "Email", "phone": "Telephone", "fax": "Fax", "address": "Mailing address", "whatsapp": "Chat on WhatsApp" },
   "form": {
     "title": "Inquiry details",
-    "notice": "This contact form is inactive in the development build. It does not submit, store or send any information.",
-    "name": "Name", "company": "Company", "email": "Work email", "country": "Country or market", "message": "Message", "required": "Required", "submit": "Send inquiry", "inactive": "Delivery is unavailable until the approved server-side contact service is implemented.",
-    "validationSummary": "Please complete the required fields before delivery can be enabled.",
+    "notice": "Form delivery is not available yet. Please use the contact details while the secure contact service is being prepared.",
+    "name": "Name", "company": "Company", "email": "Work email", "country": "Country or market", "message": "Message", "required": "Required", "submit": "Send inquiry", "inactive": "Form delivery is not available yet. Please use the contact details provided.",
+    "validationSummary": "Please complete the required fields to review your inquiry.",
     "errors": { "name": "Enter your name.", "email": "Enter a valid work email.", "message": "Enter a message." },
     "honeypot": "Leave this field empty"
   }

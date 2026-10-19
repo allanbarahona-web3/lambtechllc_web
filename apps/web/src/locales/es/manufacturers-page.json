@@ -1,12 +1,12 @@
 {
   "metadata": {
     "title": "Para fabricantes | LAMBTECH LLC",
-    "description": "Apoyo comercial de desarrollo de mercado para fabricantes de tecnología especializada que consideran oportunidades en América Latina."
+    "description": "Evaluación de mercado, desarrollo de canales y coordinación comercial para fabricantes de tecnología especializada que consideran América Latina."
   },
   "introduction": {
     "eyebrow": "Para fabricantes",
     "title": "Desarrolle la presencia de su tecnología en América Latina.",
-    "description": "LAMBTECH ayuda a estructurar las conversaciones de mercado detrás de la tecnología especializada: dónde una aplicación puede encajar, qué rutas comerciales merecen atención y cómo los proveedores internacionales pueden coordinarse con oportunidades regionales.",
+    "description": "LAMBTECH ayuda a los fabricantes a evaluar aplicaciones, rutas de mercado y opciones de canal para tecnología especializada en América Latina.",
     "mediaAlt": "Área de media editorial para fabricantes de tecnología internacional y desarrollo comercial de mercado.",
     "mediaFallback": "Media editorial aprobada para Fabricantes pendiente",
     "mediaCaption": "Media futura: fotografía auténtica y aprobada de tecnología industrial, colaboración técnica o desarrollo de canales comerciales."
@@ -14,44 +14,44 @@
   "opportunities": {
     "eyebrow": "01 — Oportunidad regional",
     "title": "Comenzar con una pregunta de mercado útil.",
-    "description": "Una conversación de entrada productiva comienza conectando la tecnología de un fabricante con necesidades de compradores, aplicaciones industriales y condiciones comerciales que puedan hacerla relevante en un mercado latinoamericano.",
+    "description": "Una evaluación de mercado productiva conecta la tecnología de un fabricante con requerimientos de compradores, aplicaciones industriales y condiciones comerciales de un mercado latinoamericano.",
     "items": [
       "Inteligencia de mercado y calificación de oportunidades",
       "Contexto de aplicación industrial y requerimientos del comprador",
-      "Posicionamiento técnico para una conversación comercial definida",
-      "Identificación de oportunidades que merecen una revisión posterior"
+      "Posicionamiento tecnológico para una oportunidad de mercado definida",
+      "Priorización de oportunidades para revisión posterior"
     ]
   },
   "channels": {
     "eyebrow": "02 — Canales comerciales",
     "title": "Construya la ruta comercial alrededor de la aplicación.",
-    "description": "El desarrollo de canales puede reunir a distribuidores potenciales, integradores, socios comerciales y clientes alrededor de una comprensión más clara de la tecnología y del contexto local de mercado.",
+    "description": "El desarrollo de canales puede conectar distribuidores potenciales, integradores, socios comerciales y clientes con una comprensión clara de la tecnología y las condiciones del mercado local.",
     "items": [
       "Identificación de distribuidores e integradores potenciales",
-      "Conversaciones con socios comerciales y para desarrollo de clientes",
+      "Coordinación con socios comerciales y desarrollo de clientes",
       "Coordinación del desarrollo de canales",
       "Alineación entre objetivos del fabricante y relaciones empresariales locales"
     ]
   },
   "process": {
     "title": "Cómo trabaja LAMBTECH con fabricantes.",
-    "description": "Un marco conciso para organizar el trabajo de desarrollo comercial. Cada oportunidad se evalúa según su propio contexto técnico y comercial.",
+    "description": "Un marco conciso para organizar el desarrollo de mercados. Cada oportunidad se evalúa según sus requerimientos técnicos y condiciones comerciales.",
     "steps": [
-      { "number": "01", "title": "Entendimiento de mercado", "copy": "Aclarar la tecnología, la aplicación y la pregunta comercial." },
-      { "number": "02", "title": "Identificación de oportunidades", "copy": "Evaluar conversaciones relevantes de compradores, proyectos y mercados." },
-      { "number": "03", "title": "Desarrollo de canal", "copy": "Identificar rutas y relaciones comerciales potenciales." },
-      { "number": "04", "title": "Coordinación comercial", "copy": "Apoyar la siguiente conversación entre las partes relevantes." }
+      { "number": "01", "title": "Entendimiento de mercado", "copy": "Aclarar la tecnología, la aplicación y la necesidad de mercado." },
+      { "number": "02", "title": "Identificación de oportunidades", "copy": "Evaluar oportunidades de compradores, proyectos y canales." },
+      { "number": "03", "title": "Desarrollo de canales", "copy": "Identificar distribuidores potenciales, integradores y rutas comerciales." },
+      { "number": "04", "title": "Coordinación comercial", "copy": "Coordinar el siguiente paso entre las partes adecuadas." }
     ]
   },
   "network": {
     "eyebrow": "03 — Red de fabricantes de tecnología",
     "title": "Relaciones definidas alrededor de tecnología especializada.",
-    "description": "La red comercial de LAMBTECH reúne a fabricantes de tecnología especializada y conversaciones de desarrollo de mercado en contextos industriales y de infraestructura.",
+    "description": "La red comercial de LAMBTECH incluye fabricantes de tecnología especializada para aplicaciones industriales y de infraestructura.",
     "logoFallback": "Marcas autorizadas de fabricantes pendientes",
     "pendingNote": "Las marcas autorizadas de fabricantes aparecerán aquí después de verificar la identidad de los activos suministrados y aprobar su uso en el sitio web."
   },
   "cta": {
-    "title": "Conversemos sobre la próxima oportunidad de desarrollo de mercado.",
-    "label": "Hablar con LAMBTECH"
+    "title": "Explore una ruta de desarrollo de mercado para su tecnología.",
+    "label": "Contacte a LAMBTECH"
   }
 }
