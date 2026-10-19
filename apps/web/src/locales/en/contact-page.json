@@ -26,7 +26,7 @@
   "details": { "email": "Email", "phone": "Telephone", "fax": "Fax", "address": "Mailing address", "whatsapp": "Chat on WhatsApp" },
   "form": {
     "title": "Inquiry details",
-    "notice": "Form delivery is not available yet. Please use the contact details below while the secure contact service is being prepared.",
+    "notice": "Online form submissions are not available yet. Please contact us by email, phone or WhatsApp.",
     "name": "Name", "company": "Company", "email": "Work email", "country": "Country or market", "message": "Message", "required": "Required", "checkFields": "Check required fields", "inactive": "Form delivery is not available yet. Please use the contact details provided.",
     "validationSummary": "Please complete the required fields to review your inquiry.",
     "errors": { "name": "Enter your name.", "email": "Enter a valid work email.", "message": "Enter a message." },
