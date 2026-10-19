@@ -8,6 +8,6 @@
   "header": {
     "logoAlt": "LAMBTECH Tecnologías Integradas",
     "menu": { "open": "Abrir menú de navegación", "close": "Cerrar menú de navegación" },
-    "navigation": { "label": "Navegación principal", "home": "Inicio", "whatWeDo": "Qué hacemos", "technology": "Tecnología", "manufacturers": "Fabricantes", "latam": "LATAM", "about": "Nosotros", "contact": "Contáctanos" }
+    "navigation": { "label": "Navegación principal", "home": "Inicio", "whatWeDo": "Qué hacemos", "technology": "Tecnología", "manufacturers": "Fabricantes", "latam": "Latinoamérica", "about": "Nosotros", "contact": "Contáctanos" }
   }
 }
