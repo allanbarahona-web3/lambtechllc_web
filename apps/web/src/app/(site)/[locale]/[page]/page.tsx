@@ -6,6 +6,7 @@ import { CorporateHeader } from "@/components/site/corporate-header";
 import { CorporatePageFoundation } from "@/components/site/corporate-page-foundation";
 import { LegalPage } from "@/components/site/legal-page";
 import { publicCompany } from "@/config/public-company";
+import { WhatWeDoPage, type WhatWeDoPageContent } from "@/features/what-we-do/what-we-do-page";
 import { isLocale, locales, type Locale } from "@/lib/i18n/config";
 import { getTranslation } from "@/lib/i18n/server";
 import {
@@ -74,6 +75,11 @@ export async function generateMetadata({ params }: LocalizedPageProps): Promise<
     return getLocaleMetadata(locale, t(`${page}.title`), t(`${page}.description`), page, { noIndex: true });
   }
 
+  if (page === "what-we-do") {
+    const t = await getTranslation(locale, "whatWeDoPage");
+    return getLocaleMetadata(locale, t("metadata.title"), t("metadata.description"), page, { noIndex: true });
+  }
+
   const t = await getTranslation(locale, "pageFoundation");
   return getLocaleMetadata(locale, t(`pages.${page}.title`), t(`pages.${page}.description`), page, { noIndex: true });
 }
@@ -86,11 +92,12 @@ export default async function LocalizedPage({ params }: LocalizedPageProps) {
   const { locale, page } = await params;
   if (!isRoute(locale, page)) notFound();
 
-  const [common, footer, legal, pageFoundation] = await Promise.all([
+  const [common, footer, legal, pageFoundation, whatWeDoPage] = await Promise.all([
     getTranslation(locale, "common"),
     getTranslation(locale, "footer"),
     getTranslation(locale, "legal"),
     getTranslation(locale, "pageFoundation"),
+    getTranslation(locale, "whatWeDoPage"),
   ]);
   const currentPage: CorporateRouteId | undefined = isCorporateRoute(page) ? page : undefined;
   const whatsappLabel = footer("contactDetails.whatsapp");
@@ -100,6 +107,24 @@ export default async function LocalizedPage({ params }: LocalizedPageProps) {
       <CorporateHeader currentLocale={locale} currentPage={currentPage} localePath={page} labels={headerLabels(common)} />
       {isLegalRoute(page) ? (
         <LegalPage approvalGate={legal("approvalGate")} eyebrow={legal("eyebrow")} pendingCopy={legal("pendingCopy")} pendingTitle={legal("pendingTitle")} title={legal(`${page}.title`)} />
+      ) : page === "what-we-do" ? (
+        <WhatWeDoPage
+          content={{
+            cta: whatWeDoPage("cta", { returnObjects: true }) as unknown as WhatWeDoPageContent["cta"],
+            introduction: whatWeDoPage("introduction", { returnObjects: true }) as unknown as WhatWeDoPageContent["introduction"],
+            marketDevelopment: whatWeDoPage("marketDevelopment", { returnObjects: true }) as unknown as WhatWeDoPageContent["marketDevelopment"],
+            partnerships: whatWeDoPage("partnerships", { returnObjects: true }) as unknown as WhatWeDoPageContent["partnerships"],
+            process: whatWeDoPage("process", { returnObjects: true }) as unknown as WhatWeDoPageContent["process"],
+            procurement: whatWeDoPage("procurement", { returnObjects: true }) as unknown as WhatWeDoPageContent["procurement"],
+            solutions: whatWeDoPage("solutions", { returnObjects: true }) as unknown as WhatWeDoPageContent["solutions"],
+            trading: whatWeDoPage("trading", { returnObjects: true }) as unknown as WhatWeDoPageContent["trading"],
+          }}
+          currentLocale={locale}
+          media={{
+            introduction: publicCompany.media.whatWeDoIntroImageUrl,
+            supporting: publicCompany.media.whatWeDoSupportingImageUrl,
+          }}
+        />
       ) : (
         <CorporatePageFoundation
           eyebrow={pageFoundation("eyebrow")}

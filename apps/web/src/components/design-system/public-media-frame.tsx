@@ -23,7 +23,11 @@ export function PublicMediaFrame({
   const classes = ["public-media-frame", className].filter(Boolean).join(" ");
 
   if (!src) {
-    return <div aria-label={fallbackLabel} className={`${classes} public-media-frame--placeholder`} role="img" style={style} />;
+    return (
+      <div aria-label={fallbackLabel} className={`${classes} public-media-frame--placeholder`} role="img" style={style}>
+        <span>{fallbackLabel}</span>
+      </div>
+    );
   }
 
   if (kind === "video") {

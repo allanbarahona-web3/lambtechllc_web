@@ -1,0 +1,93 @@
+{
+  "metadata": {
+    "title": "What We Do | LAMBTECH LLC",
+    "description": "International procurement, technology sourcing and LATAM market development for specialized industrial and infrastructure technology."
+  },
+  "introduction": {
+    "eyebrow": "What we do",
+    "title": "A commercial bridge between technology and market.",
+    "description": "LAMBTECH brings international technology, procurement and market-development work into a clearer commercial path for specialized industrial and infrastructure applications.",
+    "mediaAlt": "Editorial media area for international technology and commercial coordination.",
+    "mediaFallback": "Approved What We Do editorial media pending",
+    "mediaCaption": "A future image in this space should show authentic technical collaboration, sourcing or industrial application context."
+  },
+  "procurement": {
+    "eyebrow": "01 — International procurement",
+    "title": "Start with the application, then clarify the supply path.",
+    "description": "For specialized requirements, the work begins with the technical and commercial context needed to identify relevant international technology and supplier options.",
+    "items": [
+      "Technology sourcing and manufacturer identification",
+      "Technical and commercial supplier evaluation",
+      "International supplier engagement and relationship coordination",
+      "Commercial negotiation and purchasing coordination",
+      "International supply and logistics coordination",
+      "Development of new technology opportunities"
+    ]
+  },
+  "process": {
+    "title": "A disciplined procurement sequence.",
+    "description": "This is an illustrative model for structuring a technology conversation; it does not represent a public record of completed projects.",
+    "steps": [
+      { "number": "01", "title": "Identify", "copy": "Clarify the technology need and identify relevant suppliers." },
+      { "number": "02", "title": "Qualify", "copy": "Review the technical and commercial fit of the available options." },
+      { "number": "03", "title": "Source", "copy": "Engage the international supplier around the defined application." },
+      { "number": "04", "title": "Negotiate", "copy": "Coordinate commercial terms and supply conditions." },
+      { "number": "05", "title": "Coordinate", "copy": "Align the international purchasing and supply path." },
+      { "number": "06", "title": "Deliver", "copy": "Connect the opportunity with the suitable LATAM market or partner." }
+    ]
+  },
+  "marketDevelopment": {
+    "eyebrow": "02 — LATAM market development",
+    "title": "Turn regional context into a more informed commercial decision.",
+    "description": "LAMBTECH can help manufacturers evaluate market-entry questions and identify the commercial conversations that merit further development in Latin America.",
+    "items": [
+      "Market research and opportunity assessment",
+      "Market-entry and technical-positioning considerations",
+      "Distributor, integrator and local-partner identification",
+      "Channel and business-development support",
+      "Potential customer and project identification",
+      "Coordination of local commercial relationships"
+    ]
+  },
+  "partnerships": {
+    "eyebrow": "03 — Technology partnerships",
+    "title": "Build the conditions for meaningful commercial collaboration.",
+    "description": "The focus is on connecting technology manufacturers, commercial opportunities and local business relationships with a clear understanding of each party's role.",
+    "items": [
+      "Manufacturer relationship development",
+      "Commercial collaboration and technology introduction",
+      "Regional channel-development planning",
+      "Coordination with local business partners"
+    ]
+  },
+  "trading": {
+    "eyebrow": "04 — International trading",
+    "title": "Coordinate specialized technology across borders.",
+    "description": "Where the commercial and legal conditions are appropriate, the model can include the international sourcing and trading of specialized technologies for customers or distributors in Latin America.",
+    "items": [
+      "Sourcing aligned with a specific requirement",
+      "Commercial terms defined for each opportunity",
+      "Coordination between international suppliers and regional demand",
+      "No public product catalogue or universal availability claim"
+    ]
+  },
+  "solutions": {
+    "eyebrow": "05 — Technology solutions",
+    "title": "Connect technology with the real application context.",
+    "description": "LAMBTECH's role is to connect specialized technologies with requirements in water, infrastructure, energy and industry—not to present itself as the manufacturer or local installation contractor.",
+    "items": [
+      "Application-led technology conversations",
+      "Industrial and infrastructure requirements",
+      "Technical and commercial context before supplier selection",
+      "Clear boundaries between international sourcing and local execution"
+    ],
+    "mediaAlt": "Editorial media area for industrial and infrastructure technology applications.",
+    "mediaFallback": "Approved supporting editorial media pending",
+    "mediaCaption": "A future image here should be authentic, licensed and relevant to an industrial or infrastructure application."
+  },
+  "cta": {
+    "title": "Choose the commercial path that fits your starting point.",
+    "manufacturer": "Expand into LATAM",
+    "technology": "Find technology"
+  }
+}

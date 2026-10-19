@@ -10,6 +10,7 @@ import enPageFoundation from "@/locales/en/page-foundation.json";
 import enPartners from "@/locales/en/partners.json";
 import enTechnology from "@/locales/en/technology.json";
 import enWhatWeDo from "@/locales/en/what-we-do.json";
+import enWhatWeDoPage from "@/locales/en/what-we-do-page.json";
 import esApproach from "@/locales/es/approach.json";
 import esCommon from "@/locales/es/common.json";
 import esContact from "@/locales/es/contact.json";
@@ -21,6 +22,7 @@ import esPageFoundation from "@/locales/es/page-foundation.json";
 import esPartners from "@/locales/es/partners.json";
 import esTechnology from "@/locales/es/technology.json";
 import esWhatWeDo from "@/locales/es/what-we-do.json";
+import esWhatWeDoPage from "@/locales/es/what-we-do-page.json";
 import type { Locale } from "./config";
 
 const resources = {
@@ -36,6 +38,7 @@ const resources = {
     partners: enPartners,
     technology: enTechnology,
     whatWeDo: enWhatWeDo,
+    whatWeDoPage: enWhatWeDoPage,
   },
   es: {
     approach: esApproach,
@@ -49,6 +52,7 @@ const resources = {
     partners: esPartners,
     technology: esTechnology,
     whatWeDo: esWhatWeDo,
+    whatWeDoPage: esWhatWeDoPage,
   },
 } as const;
 

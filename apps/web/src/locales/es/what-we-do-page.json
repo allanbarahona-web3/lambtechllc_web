@@ -1,0 +1,93 @@
+{
+  "metadata": {
+    "title": "Qué hacemos | LAMBTECH LLC",
+    "description": "Abastecimiento internacional, búsqueda de tecnología y desarrollo de mercados LATAM para tecnología industrial y de infraestructura especializada."
+  },
+  "introduction": {
+    "eyebrow": "Qué hacemos",
+    "title": "Un puente comercial entre la tecnología y el mercado.",
+    "description": "LAMBTECH integra tecnología internacional, abastecimiento y desarrollo de mercados en una ruta comercial más clara para aplicaciones especializadas de industria e infraestructura.",
+    "mediaAlt": "Área de media editorial para tecnología internacional y coordinación comercial.",
+    "mediaFallback": "Media editorial aprobada para Qué hacemos pendiente",
+    "mediaCaption": "Una futura imagen en este espacio debe mostrar colaboración técnica auténtica, abastecimiento o un contexto de aplicación industrial."
+  },
+  "procurement": {
+    "eyebrow": "01 — Abastecimiento internacional",
+    "title": "Comenzar por la aplicación y aclarar la ruta de suministro.",
+    "description": "Para requerimientos especializados, el trabajo inicia con el contexto técnico y comercial necesario para identificar tecnología internacional y opciones de proveedores relevantes.",
+    "items": [
+      "Búsqueda de tecnología e identificación de fabricantes",
+      "Evaluación técnica y comercial de proveedores",
+      "Relación y coordinación con proveedores internacionales",
+      "Negociación comercial y coordinación de compras",
+      "Coordinación de suministro y logística internacional",
+      "Desarrollo de nuevas oportunidades tecnológicas"
+    ]
+  },
+  "process": {
+    "title": "Una secuencia disciplinada de abastecimiento.",
+    "description": "Es un modelo ilustrativo para estructurar una conversación tecnológica; no representa un registro público de proyectos realizados.",
+    "steps": [
+      { "number": "01", "title": "Identificar", "copy": "Aclarar la necesidad tecnológica e identificar proveedores relevantes." },
+      { "number": "02", "title": "Calificar", "copy": "Revisar el ajuste técnico y comercial de las opciones disponibles." },
+      { "number": "03", "title": "Buscar", "copy": "Relacionarse con el proveedor internacional a partir de la aplicación definida." },
+      { "number": "04", "title": "Negociar", "copy": "Coordinar condiciones comerciales y de suministro." },
+      { "number": "05", "title": "Coordinar", "copy": "Alinear la ruta de compra y suministro internacional." },
+      { "number": "06", "title": "Entregar", "copy": "Conectar la oportunidad con el mercado o socio LATAM adecuado." }
+    ]
+  },
+  "marketDevelopment": {
+    "eyebrow": "02 — Desarrollo de mercado LATAM",
+    "title": "Convertir el contexto regional en una decisión comercial más informada.",
+    "description": "LAMBTECH puede ayudar a los fabricantes a evaluar preguntas de entrada a mercado e identificar las conversaciones comerciales que merecen mayor desarrollo en América Latina.",
+    "items": [
+      "Investigación de mercado y evaluación de oportunidades",
+      "Consideraciones de entrada a mercado y posicionamiento técnico",
+      "Identificación de distribuidores, integradores y socios locales",
+      "Apoyo al desarrollo de canales y negocios",
+      "Identificación de posibles clientes y proyectos",
+      "Coordinación de relaciones comerciales locales"
+    ]
+  },
+  "partnerships": {
+    "eyebrow": "03 — Alianzas tecnológicas",
+    "title": "Crear las condiciones para una colaboración comercial significativa.",
+    "description": "El enfoque consiste en conectar fabricantes de tecnología, oportunidades comerciales y relaciones empresariales locales con una comprensión clara del rol de cada parte.",
+    "items": [
+      "Desarrollo de relaciones con fabricantes",
+      "Colaboración comercial e introducción de tecnología",
+      "Planificación de desarrollo de canales regionales",
+      "Coordinación con socios empresariales locales"
+    ]
+  },
+  "trading": {
+    "eyebrow": "04 — Comercio internacional",
+    "title": "Coordinar tecnología especializada entre fronteras.",
+    "description": "Cuando las condiciones comerciales y legales sean apropiadas, el modelo puede incluir el abastecimiento y comercio internacional de tecnologías especializadas para clientes o distribuidores en América Latina.",
+    "items": [
+      "Abastecimiento alineado con un requerimiento específico",
+      "Condiciones comerciales definidas para cada oportunidad",
+      "Coordinación entre proveedores internacionales y demanda regional",
+      "Sin catálogo público ni afirmación de disponibilidad universal"
+    ]
+  },
+  "solutions": {
+    "eyebrow": "05 — Soluciones tecnológicas",
+    "title": "Conectar la tecnología con el contexto real de aplicación.",
+    "description": "El rol de LAMBTECH es conectar tecnologías especializadas con requisitos de agua, infraestructura, energía e industria; no presentarse como fabricante ni contratista local de instalación.",
+    "items": [
+      "Conversaciones tecnológicas guiadas por la aplicación",
+      "Requerimientos industriales y de infraestructura",
+      "Contexto técnico y comercial previo a la selección de proveedor",
+      "Límites claros entre abastecimiento internacional y ejecución local"
+    ],
+    "mediaAlt": "Área de media editorial para aplicaciones tecnológicas industriales y de infraestructura.",
+    "mediaFallback": "Media editorial complementaria aprobada pendiente",
+    "mediaCaption": "Una futura imagen debe ser auténtica, licenciada y pertinente para una aplicación industrial o de infraestructura."
+  },
+  "cta": {
+    "title": "Elija la ruta comercial que mejor corresponde a su punto de partida.",
+    "manufacturer": "Expandirse a Latinoamérica",
+    "technology": "Encontrar tecnología"
+  }
+}

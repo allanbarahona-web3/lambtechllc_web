@@ -69,6 +69,8 @@ export const publicCompany = {
     faviconUrl: publicHttpUrl(process.env.NEXT_PUBLIC_FAVICON_URL),
     footerLogoUrl: publicHttpUrl(process.env.NEXT_PUBLIC_FOOTER_LOGO_URL),
     heroImageUrl: publicHttpUrl(process.env.NEXT_PUBLIC_LAMBTECH_HERO_IMAGE_URL),
+    whatWeDoIntroImageUrl: publicHttpUrl(process.env.NEXT_PUBLIC_WHAT_WE_DO_INTRO_IMAGE_URL),
+    whatWeDoSupportingImageUrl: publicHttpUrl(process.env.NEXT_PUBLIC_WHAT_WE_DO_SUPPORTING_IMAGE_URL),
   },
   name: optionalValue(process.env.NEXT_PUBLIC_COMPANY_NAME),
   partnerLogos: partnerLogos(process.env.NEXT_PUBLIC_PARTNER_LOGOS),
