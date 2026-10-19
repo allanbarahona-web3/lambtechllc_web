@@ -460,22 +460,19 @@ h4 {
   }
 
   .site-header__contact-cta {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 2.5rem;
-    padding: 0.5rem 0.875rem;
-    border-radius: var(--radius-control);
-    background: var(--color-brand-teal);
-    color: var(--color-surface-base);
-    font-size: 0.875rem;
-    font-weight: 600;
+    color: var(--color-text-primary);
+    font-size: 0.9375rem;
+    font-weight: 500;
     line-height: 1.2;
     white-space: nowrap;
+    text-decoration: none;
   }
 
   .site-header__contact-cta[aria-current="page"] {
-    background: var(--color-brand-teal-hover);
+    color: var(--color-brand-teal);
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.28em;
   }
 }
 
