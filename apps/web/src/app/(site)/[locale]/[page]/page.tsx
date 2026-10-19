@@ -6,6 +6,7 @@ import { CorporateHeader } from "@/components/site/corporate-header";
 import { CorporatePageFoundation } from "@/components/site/corporate-page-foundation";
 import { LegalPage } from "@/components/site/legal-page";
 import { publicCompany } from "@/config/public-company";
+import { ManufacturersPage, type ManufacturersPageContent } from "@/features/manufacturers/manufacturers-page";
 import { TechnologyPage, type TechnologyPageContent } from "@/features/technology/technology-page";
 import { WhatWeDoPage, type WhatWeDoPageContent } from "@/features/what-we-do/what-we-do-page";
 import { isLocale, locales, type Locale } from "@/lib/i18n/config";
@@ -86,6 +87,11 @@ export async function generateMetadata({ params }: LocalizedPageProps): Promise<
     return getLocaleMetadata(locale, t("metadata.title"), t("metadata.description"), page, { noIndex: true });
   }
 
+  if (page === "manufacturers") {
+    const t = await getTranslation(locale, "manufacturersPage");
+    return getLocaleMetadata(locale, t("metadata.title"), t("metadata.description"), page, { noIndex: true });
+  }
+
   const t = await getTranslation(locale, "pageFoundation");
   return getLocaleMetadata(locale, t(`pages.${page}.title`), t(`pages.${page}.description`), page, { noIndex: true });
 }
@@ -98,11 +104,12 @@ export default async function LocalizedPage({ params }: LocalizedPageProps) {
   const { locale, page } = await params;
   if (!isRoute(locale, page)) notFound();
 
-  const [common, footer, legal, pageFoundation, technologyPage, whatWeDoPage] = await Promise.all([
+  const [common, footer, legal, pageFoundation, manufacturersPage, technologyPage, whatWeDoPage] = await Promise.all([
     getTranslation(locale, "common"),
     getTranslation(locale, "footer"),
     getTranslation(locale, "legal"),
     getTranslation(locale, "pageFoundation"),
+    getTranslation(locale, "manufacturersPage"),
     getTranslation(locale, "technologyPage"),
     getTranslation(locale, "whatWeDoPage"),
   ]);
@@ -147,6 +154,20 @@ export default async function LocalizedPage({ params }: LocalizedPageProps) {
             introduction: publicCompany.media.technologyIntroImageUrl,
             water: publicCompany.media.technologyWaterImageUrl,
           }}
+        />
+      ) : page === "manufacturers" ? (
+        <ManufacturersPage
+          content={{
+            channels: manufacturersPage("channels", { returnObjects: true }) as unknown as ManufacturersPageContent["channels"],
+            cta: manufacturersPage("cta", { returnObjects: true }) as unknown as ManufacturersPageContent["cta"],
+            introduction: manufacturersPage("introduction", { returnObjects: true }) as unknown as ManufacturersPageContent["introduction"],
+            network: manufacturersPage("network", { returnObjects: true }) as unknown as ManufacturersPageContent["network"],
+            opportunities: manufacturersPage("opportunities", { returnObjects: true }) as unknown as ManufacturersPageContent["opportunities"],
+            process: manufacturersPage("process", { returnObjects: true }) as unknown as ManufacturersPageContent["process"],
+          }}
+          currentLocale={locale}
+          logos={publicCompany.partnerLogos}
+          media={{ introduction: publicCompany.media.manufacturersIntroImageUrl }}
         />
       ) : (
         <CorporatePageFoundation
