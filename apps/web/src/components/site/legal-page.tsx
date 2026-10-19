@@ -8,7 +8,7 @@ export function LegalPage({ approvalGate, eyebrow, pendingCopy, pendingTitle, ti
     <main id="main-content">
       <section className="legal-page">
         <Container width="prose">
-          <SectionHeading eyebrow={eyebrow} title={title} />
+          <SectionHeading eyebrow={eyebrow} level="h1" title={title} />
           <div className="legal-page__notice">
             <h2>{pendingTitle}</h2>
             <p>{pendingCopy}</p>

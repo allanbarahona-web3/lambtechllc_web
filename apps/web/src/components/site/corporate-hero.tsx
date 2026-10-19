@@ -2,6 +2,7 @@ import { Container } from "@/components/design-system/container";
 import { ButtonLink } from "@/components/design-system/button-link";
 import type { Locale } from "@/lib/i18n/config";
 import { heroMedia } from "@/lib/media";
+import { getRouteHref } from "@/lib/site-navigation";
 
 type CorporateHeroProps = {
   currentLocale: Locale;
@@ -35,10 +36,10 @@ export function CorporateHero({ currentLocale, labels }: CorporateHeroProps) {
             <p className="eyebrow">{labels.eyebrow}</p>
             <h1 id="hero-title">{labels.headline}</h1>
             <div className="corporate-hero__actions">
-              <ButtonLink href={`/${currentLocale}#contact-manufacturers`}>
+              <ButtonLink href={getRouteHref(currentLocale, "manufacturers")}>
                 {labels.primaryCta}
               </ButtonLink>
-              <ButtonLink href={`/${currentLocale}#contact-customers`} variant="secondary">
+              <ButtonLink href={getRouteHref(currentLocale, "latam")} variant="secondary">
                 {labels.secondaryCta}
               </ButtonLink>
             </div>

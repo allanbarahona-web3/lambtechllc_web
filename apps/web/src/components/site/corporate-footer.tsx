@@ -5,7 +5,7 @@ import { SocialLinks } from "@/components/company/social-links";
 import { publicCompany, type SocialPlatform } from "@/config/public-company";
 import { Container } from "@/components/design-system/container";
 import type { Locale } from "@/lib/i18n/config";
-import { getPlannedSectionHref, type PlannedSectionId } from "@/lib/site-navigation";
+import { getRouteHref, type PrimaryNavigationRouteId } from "@/lib/site-navigation";
 
 type CorporateFooterProps = {
   currentLocale: Locale;
@@ -30,7 +30,7 @@ type CorporateFooterProps = {
 };
 
 export function CorporateFooter({ currentLocale, labels }: CorporateFooterProps) {
-  const sectionLinks: Array<{ id: PlannedSectionId; label: string }> = [
+  const sectionLinks: Array<{ id: PrimaryNavigationRouteId; label: string }> = [
     { id: "what-we-do", label: labels.whatWeDo },
     { id: "technology", label: labels.technology },
     { id: "about", label: labels.about },
@@ -55,7 +55,7 @@ export function CorporateFooter({ currentLocale, labels }: CorporateFooterProps)
             <p className="site-footer__heading">{labels.navigationTitle}</p>
             <ul>
               {sectionLinks.map(({ id, label }) => (
-                <li key={id}><Link href={getPlannedSectionHref(currentLocale, id)}>{label}</Link></li>
+                <li key={id}><Link href={getRouteHref(currentLocale, id)}>{label}</Link></li>
               ))}
             </ul>
           </nav>

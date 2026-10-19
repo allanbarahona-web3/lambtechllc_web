@@ -19,6 +19,7 @@ export function getLocaleMetadata(
   title: string,
   description: string,
   pathSuffix = "",
+  { noIndex = false }: { noIndex?: boolean } = {},
 ): Metadata {
   const normalizedSuffix = pathSuffix.replace(/^\/+/, "");
   const pathname = normalizedSuffix ? `/${locale}/${normalizedSuffix}` : `/${locale}`;
@@ -40,6 +41,7 @@ export function getLocaleMetadata(
         }
       : undefined,
     metadataBase: getMetadataBase(),
+    ...(noIndex ? { robots: { follow: false, index: false } } : {}),
     title,
   };
 }

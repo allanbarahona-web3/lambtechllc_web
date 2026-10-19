@@ -4,13 +4,15 @@ import { Container } from "@/components/design-system/container";
 import { LocaleSwitcher } from "@/components/i18n/locale-switcher";
 import type { Locale } from "@/lib/i18n/config";
 import {
-  getPlannedSectionHref,
-  type PlannedSectionId,
+  getRouteHref,
+  type CorporateRouteId,
+  type PrimaryNavigationRouteId,
 } from "@/lib/site-navigation";
 import { MobileNavigation } from "./mobile-navigation";
 
 type CorporateHeaderProps = {
   currentLocale: Locale;
+  currentPage?: CorporateRouteId;
   localePath?: string;
   labels: {
     about: string;
@@ -27,16 +29,16 @@ type CorporateHeaderProps = {
   };
 };
 
-const navigationOrder: PlannedSectionId[] = [
+const navigationOrder: PrimaryNavigationRouteId[] = [
   "what-we-do",
   "technology",
   "about",
   "contact",
 ];
 
-export function CorporateHeader({ currentLocale, labels, localePath }: CorporateHeaderProps) {
+export function CorporateHeader({ currentLocale, currentPage, labels, localePath }: CorporateHeaderProps) {
   const navigationItems = navigationOrder.map((id) => ({
-    href: getPlannedSectionHref(currentLocale, id),
+    href: getRouteHref(currentLocale, id),
     id,
     label:
       id === "what-we-do"
@@ -67,7 +69,7 @@ export function CorporateHeader({ currentLocale, labels, localePath }: Corporate
             <ul>
               {navigationItems.map((item) => (
                 <li key={item.id}>
-                  <Link className="site-header__navigation-link" href={item.href}>{item.label}</Link>
+                  <Link aria-current={currentPage === item.id ? "page" : undefined} className="site-header__navigation-link" href={item.href}>{item.label}</Link>
                 </li>
               ))}
             </ul>
@@ -83,7 +85,7 @@ export function CorporateHeader({ currentLocale, labels, localePath }: Corporate
               spanishAccessibleLabel={labels.spanish}
               spanishLabel="ES"
             />
-            <Link className="site-header__contact-cta" href={getPlannedSectionHref(currentLocale, "contact")}>{labels.contact}</Link>
+            <Link aria-current={currentPage === "contact" ? "page" : undefined} className="site-header__contact-cta" href={getRouteHref(currentLocale, "contact")}>{labels.contact}</Link>
           </div>
         </div>
 
@@ -101,6 +103,7 @@ export function CorporateHeader({ currentLocale, labels, localePath }: Corporate
           <MobileNavigation
             closeLabel={labels.menuClose}
             currentLocale={currentLocale}
+            currentPage={currentPage}
             englishLabel={labels.english}
             items={navigationItems}
             languageLabel={labels.language}

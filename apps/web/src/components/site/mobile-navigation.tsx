@@ -3,13 +3,14 @@
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import type { Locale } from "@/lib/i18n/config";
-import type { PlannedSectionId } from "@/lib/site-navigation";
+import type { CorporateRouteId, PrimaryNavigationRouteId } from "@/lib/site-navigation";
 
 type MobileNavigationProps = {
   closeLabel: string;
   currentLocale: Locale;
+  currentPage?: CorporateRouteId;
   englishLabel: string;
-  items: Array<{ href: string; id: PlannedSectionId; label: string }>;
+  items: Array<{ href: string; id: PrimaryNavigationRouteId; label: string }>;
   languageLabel: string;
   localePath?: string;
   navigationLabel: string;
@@ -20,6 +21,7 @@ type MobileNavigationProps = {
 export function MobileNavigation({
   closeLabel,
   currentLocale,
+  currentPage,
   englishLabel,
   items,
   languageLabel,
@@ -90,7 +92,7 @@ export function MobileNavigation({
             <ul className="mobile-navigation__list">
               {items.map((item) => (
                 <li key={item.id}>
-                  <Link className="mobile-navigation__link" href={item.href} onClick={() => closeMenu()}>{item.label}</Link>
+                  <Link aria-current={currentPage === item.id ? "page" : undefined} className="mobile-navigation__link" href={item.href} onClick={() => closeMenu()}>{item.label}</Link>
                 </li>
               ))}
             </ul>
