@@ -9,6 +9,20 @@ export const corporateRouteIds = [
   "contact",
 ] as const;
 
+export const headerNavigationRouteIds = [
+  "home",
+  "what-we-do",
+  "technology",
+  "manufacturers",
+  "latam",
+  "about",
+] as const;
+
+export const mobileNavigationRouteIds = [
+  ...headerNavigationRouteIds,
+  "contact",
+] as const;
+
 export const primaryNavigationRouteIds = [
   "what-we-do",
   "technology",
@@ -19,12 +33,13 @@ export const primaryNavigationRouteIds = [
 export const legalRouteIds = ["privacy", "terms", "cookies"] as const;
 
 export type CorporateRouteId = (typeof corporateRouteIds)[number];
+export type HeaderNavigationRouteId = (typeof mobileNavigationRouteIds)[number];
 export type PrimaryNavigationRouteId = (typeof primaryNavigationRouteIds)[number];
 export type LegalRouteId = (typeof legalRouteIds)[number];
-export type SiteRouteId = CorporateRouteId | LegalRouteId;
+export type SiteRouteId = HeaderNavigationRouteId | LegalRouteId;
 
 export function getRouteHref(locale: Locale, route: SiteRouteId) {
-  return `/${locale}/${route}`;
+  return route === "home" ? `/${locale}` : `/${locale}/${route}`;
 }
 
 export function isCorporateRoute(value: string): value is CorporateRouteId {

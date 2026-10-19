@@ -5,7 +5,6 @@ type ManufacturerLogoGridProps = {
   fallbackLabel: string;
   logos: readonly PublicPartnerLogo[];
   slotCount?: number;
-  slotLabel: string;
   variant?: "full" | "preview";
 };
 
@@ -13,13 +12,12 @@ export function ManufacturerLogoGrid({
   fallbackLabel,
   logos,
   slotCount = 8,
-  slotLabel,
   variant = "full",
 }: ManufacturerLogoGridProps) {
   const className = `manufacturer-logo-grid manufacturer-logo-grid--${variant}`;
 
   return (
-    <div className={className} role={logos.length ? "list" : undefined}>
+    <div aria-label={!logos.length ? fallbackLabel : undefined} className={className} role={logos.length ? "list" : "img"}>
       {logos.length ? logos.map((logo) => (
         <PublicMediaFrame
           alt={logo.name}
@@ -30,7 +28,7 @@ export function ManufacturerLogoGrid({
           src={logo.src}
         />
       )) : Array.from({ length: slotCount }, (_, index) => (
-        <div aria-hidden="true" className="manufacturer-logo-grid__slot" key={index}>{slotLabel}</div>
+        <div aria-hidden="true" className="manufacturer-logo-grid__slot" key={index} />
       ))}
     </div>
   );

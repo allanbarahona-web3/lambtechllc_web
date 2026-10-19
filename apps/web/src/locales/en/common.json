@@ -8,6 +8,6 @@
   "header": {
     "logoAlt": "LAMBTECH Integrated Technologies",
     "menu": { "open": "Open navigation menu", "close": "Close navigation menu" },
-    "navigation": { "label": "Primary navigation", "whatWeDo": "What We Do", "technology": "Technology", "about": "About", "contact": "Let's Talk" }
+    "navigation": { "label": "Primary navigation", "home": "Home", "whatWeDo": "What We Do", "technology": "Technology", "manufacturers": "Manufacturers", "latam": "LATAM", "about": "About", "contact": "Let's Talk" }
   }
 }

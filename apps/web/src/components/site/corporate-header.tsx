@@ -5,49 +5,56 @@ import { LocaleSwitcher } from "@/components/i18n/locale-switcher";
 import type { Locale } from "@/lib/i18n/config";
 import {
   getRouteHref,
-  type CorporateRouteId,
-  type PrimaryNavigationRouteId,
+  headerNavigationRouteIds,
+  mobileNavigationRouteIds,
+  type HeaderNavigationRouteId,
 } from "@/lib/site-navigation";
 import { MobileNavigation } from "./mobile-navigation";
 
 type CorporateHeaderProps = {
   currentLocale: Locale;
-  currentPage?: CorporateRouteId;
+  currentPage?: HeaderNavigationRouteId;
   localePath?: string;
   labels: {
     about: string;
     contact: string;
     english: string;
     language: string;
+    latam: string;
     logoAlt: string;
+    manufacturers: string;
     menuClose: string;
     menuOpen: string;
     navigation: string;
     spanish: string;
     technology: string;
+    home: string;
     whatWeDo: string;
   };
 };
 
-const navigationOrder: PrimaryNavigationRouteId[] = [
-  "what-we-do",
-  "technology",
-  "about",
-  "contact",
-];
+function getNavigationLabel(id: HeaderNavigationRouteId, labels: CorporateHeaderProps["labels"]) {
+  switch (id) {
+    case "home": return labels.home;
+    case "what-we-do": return labels.whatWeDo;
+    case "technology": return labels.technology;
+    case "manufacturers": return labels.manufacturers;
+    case "latam": return labels.latam;
+    case "about": return labels.about;
+    case "contact": return labels.contact;
+  }
+}
 
 export function CorporateHeader({ currentLocale, currentPage, labels, localePath }: CorporateHeaderProps) {
-  const navigationItems = navigationOrder.map((id) => ({
+  const desktopNavigationItems = headerNavigationRouteIds.map((id) => ({
     href: getRouteHref(currentLocale, id),
     id,
-    label:
-      id === "what-we-do"
-        ? labels.whatWeDo
-        : id === "technology"
-          ? labels.technology
-          : id === "about"
-            ? labels.about
-            : labels.contact,
+    label: getNavigationLabel(id, labels),
+  }));
+  const mobileNavigationItems = mobileNavigationRouteIds.map((id) => ({
+    href: getRouteHref(currentLocale, id),
+    id,
+    label: getNavigationLabel(id, labels),
   }));
 
   return (
@@ -67,7 +74,7 @@ export function CorporateHeader({ currentLocale, currentPage, labels, localePath
 
           <nav aria-label={labels.navigation} className="site-header__primary-navigation">
             <ul>
-              {navigationItems.map((item) => (
+              {desktopNavigationItems.map((item) => (
                 <li key={item.id}>
                   <Link aria-current={currentPage === item.id ? "page" : undefined} className="site-header__navigation-link" href={item.href}>{item.label}</Link>
                 </li>
@@ -105,7 +112,7 @@ export function CorporateHeader({ currentLocale, currentPage, labels, localePath
             currentLocale={currentLocale}
             currentPage={currentPage}
             englishLabel={labels.english}
-            items={navigationItems}
+            items={mobileNavigationItems}
             languageLabel={labels.language}
             localePath={localePath}
             navigationLabel={labels.navigation}

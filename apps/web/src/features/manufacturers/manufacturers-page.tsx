@@ -21,7 +21,7 @@ export type ManufacturersPageContent = {
   cta: { label: string; title: string };
   channels: EditorialSection;
   introduction: { description: string; eyebrow: string; mediaAlt: string; mediaCaption: string; mediaFallback: string; title: string };
-  network: { description: string; eyebrow: string; logoFallback: string; pendingNote: string; slotLabel: string; title: string };
+  network: { description: string; eyebrow: string; logoFallback: string; pendingNote: string; title: string };
   opportunities: EditorialSection;
   process: { description: string; steps: ProcessStep[]; title: string };
 };
@@ -72,7 +72,7 @@ export function ManufacturersPage({ content, currentLocale, logos, media }: Manu
       <section aria-labelledby="manufacturer-network-title" className="internal-page__section">
         <Container>
           <SectionHeading description={content.network.description} eyebrow={content.network.eyebrow} title={content.network.title} titleId="manufacturer-network-title" />
-          <ManufacturerLogoGrid fallbackLabel={content.network.logoFallback} logos={logos} slotLabel={content.network.slotLabel} />
+          <ManufacturerLogoGrid fallbackLabel={content.network.logoFallback} logos={logos} />
           {!logos.length ? <p className="manufacturer-logo-grid__note">{content.network.pendingNote}</p> : null}
         </Container>
       </section>

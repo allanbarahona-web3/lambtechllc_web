@@ -30,11 +30,12 @@ export default async function LocalePage({ params }: LocalePageProps) {
 
   return (
     <>
-      <CorporateHeader currentLocale={locale} labels={{
+      <CorporateHeader currentLocale={locale} currentPage="home" labels={{
         about: common("header.navigation.about"), contact: common("header.navigation.contact"),
         english: common("languageSwitcher.english"), language: common("languageSwitcher.label"),
+        home: common("header.navigation.home"), latam: common("header.navigation.latam"),
         logoAlt: common("header.logoAlt"), menuClose: common("header.menu.close"), menuOpen: common("header.menu.open"),
-        navigation: common("header.navigation.label"), spanish: common("languageSwitcher.spanish"),
+        manufacturers: common("header.navigation.manufacturers"), navigation: common("header.navigation.label"), spanish: common("languageSwitcher.spanish"),
         technology: common("header.navigation.technology"), whatWeDo: common("header.navigation.whatWeDo"),
       }} />
       <main id="main-content">
@@ -45,7 +46,7 @@ export default async function LocalePage({ params }: LocalePageProps) {
         <HomeIntroduction copy={introduction("copy")} label={introduction("label")} />
         <WhatWeDo description={whatWeDo("description")} eyebrow={whatWeDo("eyebrow")} items={whatWeDo("items", { returnObjects: true }) as unknown as Service[]} title={whatWeDo("title")} />
         <TechnologyMarkets areas={technology("areas", { returnObjects: true }) as unknown as Array<Omit<Service, "number">>} closing={technology("closing")} description={technology("description")} eyebrow={technology("eyebrow")} title={technology("title")} />
-        <PartnerNetwork approvalNote={partners("approvalNote")} description={partners("description")} eyebrow={partners("eyebrow")} logoFallback={partners("logoFallback")} slotLabel={partners("slotLabel")} title={partners("title")} />
+        <PartnerNetwork approvalNote={partners("approvalNote")} description={partners("description")} eyebrow={partners("eyebrow")} logoFallback={partners("logoFallback")} title={partners("title")} />
         <OurApproach closing={approach("closing")} description={approach("description")} eyebrow={approach("eyebrow")} steps={approach("steps", { returnObjects: true }) as unknown as Service[]} title={approach("title")} />
         <ContactSection
           contactDetails={contact("details", { returnObjects: true }) as { address: string; email: string; fax: string; phone: string; whatsapp: string }}

@@ -3,14 +3,14 @@
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import type { Locale } from "@/lib/i18n/config";
-import type { CorporateRouteId, PrimaryNavigationRouteId } from "@/lib/site-navigation";
+import type { HeaderNavigationRouteId } from "@/lib/site-navigation";
 
 type MobileNavigationProps = {
   closeLabel: string;
   currentLocale: Locale;
-  currentPage?: CorporateRouteId;
+  currentPage?: HeaderNavigationRouteId;
   englishLabel: string;
-  items: Array<{ href: string; id: PrimaryNavigationRouteId; label: string }>;
+  items: Array<{ href: string; id: HeaderNavigationRouteId; label: string }>;
   languageLabel: string;
   localePath?: string;
   navigationLabel: string;
