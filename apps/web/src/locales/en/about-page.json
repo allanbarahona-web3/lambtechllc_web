@@ -1,0 +1,55 @@
+{
+  "metadata": {
+    "title": "About LAMBTECH | LAMBTECH LLC",
+    "description": "LAMBTECH connects international technology sourcing, commercial coordination and Latin American market-development conversations."
+  },
+  "introduction": {
+    "eyebrow": "About LAMBTECH",
+    "title": "International technology. Connected to opportunity.",
+    "description": "LAMBTECH is a Wyoming-based international technology and commercial-development company focused on bringing specialized manufacturers, sourcing conversations and Latin American opportunities into a clearer commercial path.",
+    "mediaAlt": "Editorial media area for international technology and commercial collaboration.",
+    "mediaFallback": "Approved About editorial media pending",
+    "mediaCaption": "Future media: authentic, approved photography of technology collaboration, industrial application or international commercial coordination."
+  },
+  "identity": {
+    "eyebrow": "01 — Business identity",
+    "title": "A commercial model built around technical relevance and market context.",
+    "description": "LAMBTECH brings together the work needed to assess specialized technology requirements and advance the commercial conversations that may connect international suppliers with Latin American demand.",
+    "items": [
+      "International procurement and technology sourcing",
+      "Manufacturer relationships and commercial coordination",
+      "LATAM market-development conversations",
+      "International trading where the opportunity and commercial terms are appropriate"
+    ]
+  },
+  "model": {
+    "title": "An operating model that connects the relevant conversation.",
+    "description": "The work is organized around the relationship between technology, opportunity and market context—not around a one-size-fits-all route.",
+    "steps": [
+      { "number": "01", "title": "International manufacturers", "copy": "Specialized technologies and the commercial questions behind them." },
+      { "number": "02", "title": "Technology opportunities", "copy": "Requirements, applications and supplier conversations worth examining." },
+      { "number": "03", "title": "LATAM markets", "copy": "Regional commercial context, customer needs and business relationships." }
+    ]
+  },
+  "principles": {
+    "eyebrow": "02 — Working principles",
+    "title": "Commercial relationships benefit from clarity before scale.",
+    "description": "The focus is on the practical conditions that make a technology or market-development conversation worth advancing.",
+    "items": [
+      { "title": "Technical relevance", "copy": "Start with the application, operating context and technology question." },
+      { "title": "Commercial clarity", "copy": "Frame the opportunity around the information each party needs to evaluate it." },
+      { "title": "Supplier relationships", "copy": "Coordinate manufacturer and supplier conversations with defined commercial context." },
+      { "title": "Regional understanding", "copy": "Consider the market, channel and customer context relevant to the opportunity." },
+      { "title": "Long-term relationships", "copy": "Build commercial conversations that can develop with appropriate alignment over time." }
+    ]
+  },
+  "future": {
+    "eyebrow": "03 — Looking forward",
+    "title": "A model designed to stay relevant as technology evolves.",
+    "description": "Connected technologies, IoT, data platforms and software-enabled services may become future areas of development when the underlying commercial and technical opportunities are defined."
+  },
+  "cta": {
+    "title": "Start a relevant commercial conversation.",
+    "label": "Talk to LAMBTECH"
+  }
+}

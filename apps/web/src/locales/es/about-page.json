@@ -1,0 +1,55 @@
+{
+  "metadata": {
+    "title": "Sobre LAMBTECH | LAMBTECH LLC",
+    "description": "LAMBTECH conecta búsqueda internacional de tecnología, coordinación comercial y conversaciones de desarrollo de mercado en América Latina."
+  },
+  "introduction": {
+    "eyebrow": "Sobre LAMBTECH",
+    "title": "Tecnología internacional. Conectada con la oportunidad.",
+    "description": "LAMBTECH es una empresa internacional de tecnología y desarrollo comercial establecida en Wyoming, enfocada en llevar fabricantes especializados, conversaciones de abastecimiento y oportunidades latinoamericanas hacia una ruta comercial más clara.",
+    "mediaAlt": "Área de media editorial para tecnología internacional y colaboración comercial.",
+    "mediaFallback": "Media editorial aprobada para Sobre LAMBTECH pendiente",
+    "mediaCaption": "Media futura: fotografía auténtica y aprobada de colaboración tecnológica, aplicación industrial o coordinación comercial internacional."
+  },
+  "identity": {
+    "eyebrow": "01 — Identidad empresarial",
+    "title": "Un modelo comercial construido alrededor de relevancia técnica y contexto de mercado.",
+    "description": "LAMBTECH reúne el trabajo necesario para evaluar requerimientos de tecnología especializada y avanzar las conversaciones comerciales que pueden conectar proveedores internacionales con demanda latinoamericana.",
+    "items": [
+      "Abastecimiento internacional y búsqueda de tecnología",
+      "Relaciones con fabricantes y coordinación comercial",
+      "Conversaciones de desarrollo de mercado LATAM",
+      "Comercio internacional cuando la oportunidad y las condiciones comerciales sean apropiadas"
+    ]
+  },
+  "model": {
+    "title": "Un modelo operativo que conecta la conversación relevante.",
+    "description": "El trabajo se organiza alrededor de la relación entre tecnología, oportunidad y contexto de mercado; no alrededor de una ruta única para todos los casos.",
+    "steps": [
+      { "number": "01", "title": "Fabricantes internacionales", "copy": "Tecnologías especializadas y las preguntas comerciales que las acompañan." },
+      { "number": "02", "title": "Oportunidades tecnológicas", "copy": "Requerimientos, aplicaciones y conversaciones con proveedores que vale la pena examinar." },
+      { "number": "03", "title": "Mercados LATAM", "copy": "Contexto comercial regional, necesidades de clientes y relaciones empresariales." }
+    ]
+  },
+  "principles": {
+    "eyebrow": "02 — Principios de trabajo",
+    "title": "Las relaciones comerciales se benefician de la claridad antes de escalar.",
+    "description": "El enfoque está en las condiciones prácticas que hacen que una conversación de tecnología o desarrollo de mercado merezca avanzar.",
+    "items": [
+      { "title": "Relevancia técnica", "copy": "Comenzar con la aplicación, el contexto operativo y la pregunta tecnológica." },
+      { "title": "Claridad comercial", "copy": "Enmarcar la oportunidad alrededor de la información que cada parte necesita para evaluarla." },
+      { "title": "Relaciones con proveedores", "copy": "Coordinar conversaciones con fabricantes y proveedores con un contexto comercial definido." },
+      { "title": "Entendimiento regional", "copy": "Considerar el contexto de mercado, canal y cliente relevante para la oportunidad." },
+      { "title": "Relaciones de largo plazo", "copy": "Construir conversaciones comerciales que puedan desarrollarse con una alineación apropiada en el tiempo." }
+    ]
+  },
+  "future": {
+    "eyebrow": "03 — Mirada al futuro",
+    "title": "Un modelo diseñado para mantener su relevancia a medida que evoluciona la tecnología.",
+    "description": "Las tecnologías conectadas, IoT, plataformas de datos y servicios habilitados por software pueden convertirse en áreas futuras de desarrollo cuando las oportunidades comerciales y técnicas que las sustentan estén definidas."
+  },
+  "cta": {
+    "title": "Inicie una conversación comercial relevante.",
+    "label": "Hablar con LAMBTECH"
+  }
+}

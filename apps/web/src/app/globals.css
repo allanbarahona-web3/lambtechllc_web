@@ -1423,6 +1423,48 @@ section[id] {
   font-weight: 600;
 }
 
+.principles-list {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  margin-top: clamp(var(--space-7), 6vw, var(--space-8));
+  border-top: var(--border-width) solid var(--color-border-subtle);
+}
+
+.principles-list article {
+  min-width: 0;
+  padding: var(--space-5) var(--space-5) var(--space-5) 0;
+  border-right: var(--border-width) solid var(--color-border-subtle);
+}
+
+.principles-list article + article {
+  padding-left: var(--space-5);
+}
+
+.principles-list article:last-child {
+  padding-right: 0;
+  border-right: 0;
+}
+
+.principles-list article > p {
+  color: var(--color-brand-teal);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+}
+
+.principles-list h3 {
+  margin-top: var(--space-4);
+  font-size: 1.125rem;
+}
+
+.principles-list span {
+  display: block;
+  margin-top: var(--space-3);
+  color: var(--color-text-secondary);
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
 .internal-page__cta {
   padding-block: clamp(var(--space-7), 7vw, var(--space-9));
   border-top: var(--border-width) solid var(--color-border-subtle);
@@ -1480,6 +1522,19 @@ section[id] {
 
   .technology-context-list {
     grid-template-columns: 1fr;
+  }
+
+  .principles-list {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .principles-list article:nth-child(3n) {
+    padding-right: 0;
+    border-right: 0;
+  }
+
+  .principles-list article:nth-child(3n + 1) {
+    padding-left: 0;
   }
 
   .editorial-split > :first-child,
@@ -1565,6 +1620,19 @@ section[id] {
   .technology-category,
   .editorial-pair {
     grid-template-columns: 1fr;
+  }
+
+  .principles-list {
+    grid-template-columns: 1fr;
+  }
+
+  .principles-list article,
+  .principles-list article + article,
+  .principles-list article:nth-child(3n),
+  .principles-list article:nth-child(3n + 1) {
+    padding-inline: 0;
+    border-right: 0;
+    border-bottom: var(--border-width) solid var(--color-border-subtle);
   }
 
   .editorial-split > :first-child,

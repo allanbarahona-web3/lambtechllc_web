@@ -66,6 +66,7 @@ export const publicCompany = {
   fax: publicTelephone(process.env.NEXT_PUBLIC_COMPANY_FAX, process.env.NEXT_PUBLIC_COMPANY_FAX_E164),
   jurisdiction: optionalValue(process.env.NEXT_PUBLIC_COMPANY_JURISDICTION),
   media: {
+    aboutIntroImageUrl: publicHttpUrl(process.env.NEXT_PUBLIC_ABOUT_INTRO_IMAGE_URL),
     faviconUrl: publicHttpUrl(process.env.NEXT_PUBLIC_FAVICON_URL),
     footerLogoUrl: publicHttpUrl(process.env.NEXT_PUBLIC_FOOTER_LOGO_URL),
     heroImageUrl: publicHttpUrl(process.env.NEXT_PUBLIC_LAMBTECH_HERO_IMAGE_URL),

@@ -1,4 +1,5 @@
 import i18next from "i18next";
+import enAboutPage from "@/locales/en/about-page.json";
 import enApproach from "@/locales/en/approach.json";
 import enCommon from "@/locales/en/common.json";
 import enContact from "@/locales/en/contact.json";
@@ -15,6 +16,7 @@ import enTechnologyPage from "@/locales/en/technology-page.json";
 import enWhatWeDo from "@/locales/en/what-we-do.json";
 import enWhatWeDoPage from "@/locales/en/what-we-do-page.json";
 import esApproach from "@/locales/es/approach.json";
+import esAboutPage from "@/locales/es/about-page.json";
 import esCommon from "@/locales/es/common.json";
 import esContact from "@/locales/es/contact.json";
 import esFooter from "@/locales/es/footer.json";
@@ -33,6 +35,7 @@ import type { Locale } from "./config";
 
 const resources = {
   en: {
+    aboutPage: enAboutPage,
     approach: enApproach,
     common: enCommon,
     contact: enContact,
@@ -50,6 +53,7 @@ const resources = {
     whatWeDoPage: enWhatWeDoPage,
   },
   es: {
+    aboutPage: esAboutPage,
     approach: esApproach,
     common: esCommon,
     contact: esContact,

@@ -6,6 +6,7 @@ import { CorporateHeader } from "@/components/site/corporate-header";
 import { CorporatePageFoundation } from "@/components/site/corporate-page-foundation";
 import { LegalPage } from "@/components/site/legal-page";
 import { publicCompany } from "@/config/public-company";
+import { AboutPage, type AboutPageContent } from "@/features/about/about-page";
 import { LatamPage, type LatamPageContent } from "@/features/latam/latam-page";
 import { ManufacturersPage, type ManufacturersPageContent } from "@/features/manufacturers/manufacturers-page";
 import { TechnologyPage, type TechnologyPageContent } from "@/features/technology/technology-page";
@@ -98,6 +99,11 @@ export async function generateMetadata({ params }: LocalizedPageProps): Promise<
     return getLocaleMetadata(locale, t("metadata.title"), t("metadata.description"), page, { noIndex: true });
   }
 
+  if (page === "about") {
+    const t = await getTranslation(locale, "aboutPage");
+    return getLocaleMetadata(locale, t("metadata.title"), t("metadata.description"), page, { noIndex: true });
+  }
+
   const t = await getTranslation(locale, "pageFoundation");
   return getLocaleMetadata(locale, t(`pages.${page}.title`), t(`pages.${page}.description`), page, { noIndex: true });
 }
@@ -110,7 +116,8 @@ export default async function LocalizedPage({ params }: LocalizedPageProps) {
   const { locale, page } = await params;
   if (!isRoute(locale, page)) notFound();
 
-  const [common, footer, latamPage, legal, pageFoundation, manufacturersPage, technologyPage, whatWeDoPage] = await Promise.all([
+  const [aboutPage, common, footer, latamPage, legal, pageFoundation, manufacturersPage, technologyPage, whatWeDoPage] = await Promise.all([
+    getTranslation(locale, "aboutPage"),
     getTranslation(locale, "common"),
     getTranslation(locale, "footer"),
     getTranslation(locale, "latamPage"),
@@ -192,6 +199,19 @@ export default async function LocalizedPage({ params }: LocalizedPageProps) {
             introduction: publicCompany.media.latamIntroImageUrl,
             supporting: publicCompany.media.latamSupportingImageUrl,
           }}
+        />
+      ) : page === "about" ? (
+        <AboutPage
+          content={{
+            cta: aboutPage("cta", { returnObjects: true }) as unknown as AboutPageContent["cta"],
+            future: aboutPage("future", { returnObjects: true }) as unknown as AboutPageContent["future"],
+            identity: aboutPage("identity", { returnObjects: true }) as unknown as AboutPageContent["identity"],
+            introduction: aboutPage("introduction", { returnObjects: true }) as unknown as AboutPageContent["introduction"],
+            model: aboutPage("model", { returnObjects: true }) as unknown as AboutPageContent["model"],
+            principles: aboutPage("principles", { returnObjects: true }) as unknown as AboutPageContent["principles"],
+          }}
+          currentLocale={locale}
+          media={{ introduction: publicCompany.media.aboutIntroImageUrl }}
         />
       ) : (
         <CorporatePageFoundation
