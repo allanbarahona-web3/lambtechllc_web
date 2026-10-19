@@ -6,7 +6,7 @@
   "introduction": {
     "eyebrow": "For manufacturers",
     "title": "Develop your technology’s presence in Latin America.",
-    "description": "LAMBTECH helps manufacturers assess applications, market paths and channel options for specialized technology in Latin America.",
+    "description": "We help manufacturers assess applications, market paths and channel options for specialized technology in Latin America.",
     "mediaAlt": "Editorial media area for international technology manufacturers and commercial market development.",
     "mediaFallback": "Approved Manufacturers editorial media pending",
     "mediaCaption": "Future media: authentic, approved photography of industrial technology, technical collaboration or commercial channel development."
@@ -14,7 +14,7 @@
   "opportunities": {
     "eyebrow": "01 — Regional opportunity",
     "title": "Begin with a useful market question.",
-    "description": "A productive market assessment connects a manufacturer’s technology with buyer requirements, industrial applications and commercial conditions in a Latin American market.",
+    "description": "We assess market opportunities by connecting a manufacturer’s technology with buyer requirements, industrial applications and commercial conditions in Latin America.",
     "items": [
       "Market intelligence and opportunity qualification",
       "Industrial application and buyer-requirement context",
@@ -25,7 +25,7 @@
   "channels": {
     "eyebrow": "02 — Commercial channels",
     "title": "Build the commercial path around the application.",
-    "description": "Channel development can connect potential distributors, integrators, commercial partners and customers with a clear understanding of the technology and local market conditions.",
+    "description": "We develop commercial channels by connecting potential distributors, integrators, commercial partners and customers around the technology and local market conditions.",
     "items": [
       "Potential distributor and integrator identification",
       "Commercial partner and customer-development coordination",
@@ -34,24 +34,24 @@
     ]
   },
   "process": {
-    "title": "How LAMBTECH works with manufacturers.",
-    "description": "A concise framework for organizing market-development work. Each opportunity is assessed against its technical requirements and commercial conditions.",
+    "title": "How we work with manufacturers.",
+    "description": "We organize market-development work around a concise framework. We assess each opportunity against its technical requirements and commercial conditions.",
     "steps": [
-      { "number": "01", "title": "Market understanding", "copy": "Clarify the technology, application and market requirement." },
-      { "number": "02", "title": "Opportunity identification", "copy": "Assess buyer, project and channel opportunities." },
-      { "number": "03", "title": "Channel development", "copy": "Identify potential distributors, integrators and commercial paths." },
-      { "number": "04", "title": "Commercial coordination", "copy": "Coordinate the next step between the appropriate parties." }
+      { "number": "01", "title": "Market understanding", "copy": "We clarify the technology, application and market requirement." },
+      { "number": "02", "title": "Opportunity identification", "copy": "We assess buyer, project and channel opportunities." },
+      { "number": "03", "title": "Channel development", "copy": "We identify potential distributors, integrators and commercial paths." },
+      { "number": "04", "title": "Commercial coordination", "copy": "We coordinate the next step between the appropriate parties." }
     ]
   },
   "network": {
     "eyebrow": "03 — Technology manufacturer network",
     "title": "Relationships shaped around specialized technology.",
-    "description": "LAMBTECH’s commercial network includes specialized technology manufacturers serving industrial and infrastructure applications.",
+    "description": "Our commercial network includes specialized technology manufacturers serving industrial and infrastructure applications.",
     "logoFallback": "Authorized manufacturer marks pending",
     "pendingNote": "Authorized manufacturer marks will appear here after the supplied brand assets have been verified for identity and approved for website use."
   },
   "cta": {
     "title": "Explore a market-development path for your technology.",
-    "label": "Contact LAMBTECH"
+    "label": "Contact Us"
   }
 }

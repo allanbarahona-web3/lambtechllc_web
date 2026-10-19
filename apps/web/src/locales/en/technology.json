@@ -1,8 +1,8 @@
 {
   "eyebrow": "Technology & markets",
   "title": "Technology contexts shaped by real operating needs.",
-  "description": "These application areas help frame technical requirements and commercial evaluation for specialized technology.",
-  "closing": "Every evaluation starts with the application: operating conditions, technical requirements and the commercial path needed to assess a suitable technology option.",
+  "description": "We use these application areas to frame technical requirements and commercial evaluation for specialized technology.",
+  "closing": "We begin every evaluation with the application: operating conditions, technical requirements and the commercial path needed to assess a suitable technology option.",
   "areas": [
     { "title": "Water & Infrastructure", "copy": "Water networks, valves, flow measurement, monitoring and infrastructure applications." },
     { "title": "Gas, Biogas & Energy", "copy": "Gas and biogas processes, energy systems, measurement and control contexts." },

@@ -6,7 +6,7 @@
   "introduction": {
     "eyebrow": "For Latin American businesses",
     "title": "Access specialized technology for your market.",
-    "description": "LAMBTECH helps turn a defined industrial or infrastructure requirement into an international technology-sourcing process grounded in technical and commercial evaluation.",
+    "description": "We help turn a defined industrial or infrastructure requirement into an international technology-sourcing process grounded in technical and commercial evaluation.",
     "mediaAlt": "Editorial media area for international technology sourcing and industrial applications in Latin America.",
     "mediaFallback": "Approved LATAM editorial media pending",
     "mediaCaption": "Future media: authentic, approved photography of industrial infrastructure, technical evaluation or international technology sourcing."
@@ -14,7 +14,7 @@
   "requirements": {
     "eyebrow": "01 — Requirements to technology",
     "title": "Give the requirement a useful technical and commercial frame.",
-    "description": "A stronger sourcing process begins with the application, operating conditions and evaluation criteria that make a technology requirement clear to the right international suppliers.",
+    "description": "We begin with the application, operating conditions and evaluation criteria that make a technology requirement clear to the right international suppliers.",
     "items": [
       "Application and operating-context definition",
       "Technology and supplier search criteria",
@@ -25,7 +25,7 @@
   "procurement": {
     "eyebrow": "02 — International procurement",
     "title": "Coordinate the route from requirement to supplier dialogue.",
-    "description": "LAMBTECH can help connect a requirement with suitable manufacturers and suppliers, keeping sourcing activities organized around the defined need.",
+    "description": "We help connect a requirement with suitable manufacturers and suppliers, keeping sourcing activities organized around the defined need.",
     "items": [
       "Technology identification and supplier assessment",
       "Technical and commercial qualification considerations",
@@ -49,7 +49,7 @@
   "collaboration": {
     "eyebrow": "04 — Collaboration model",
     "title": "Coordinate the right parties around a defined requirement.",
-    "description": "The model brings customer requirements, international technology suppliers and regional business relationships into a coordinated process with clear roles for each opportunity.",
+    "description": "We bring customer requirements, international technology suppliers and regional business relationships into a coordinated process with clear roles for each opportunity.",
     "items": [
       "Customer requirement and application definition",
       "International manufacturer or supplier engagement",
@@ -62,16 +62,16 @@
   },
   "process": {
     "title": "A clear path for a specialized requirement.",
-    "description": "This framework organizes sourcing and commercial coordination; the details of each requirement are assessed individually.",
+    "description": "We use this framework to organize sourcing and commercial coordination, while assessing the details of each requirement individually.",
     "steps": [
-      { "number": "01", "title": "Requirement", "copy": "Define the application and the technology question." },
-      { "number": "02", "title": "Technology", "copy": "Identify suitable international technology and supplier options." },
-      { "number": "03", "title": "Coordination", "copy": "Align technical evaluation, supplier engagement and commercial conditions." },
-      { "number": "04", "title": "Market alignment", "copy": "Connect the requirement with the applicable regional business conditions." }
+      { "number": "01", "title": "Requirement", "copy": "We define the application and the technology question." },
+      { "number": "02", "title": "Technology", "copy": "We identify suitable international technology and supplier options." },
+      { "number": "03", "title": "Coordination", "copy": "We align technical evaluation, supplier engagement and commercial conditions." },
+      { "number": "04", "title": "Market alignment", "copy": "We connect the requirement with the applicable regional business conditions." }
     ]
   },
   "cta": {
     "title": "Explore an international sourcing path for your requirement.",
-    "label": "Contact LAMBTECH"
+    "label": "Discuss your requirement"
   }
 }

@@ -1,7 +1,7 @@
 {
   "eyebrow": "Contact",
   "title": "Choose the right route for your inquiry.",
-  "description": "Select the path that best matches your inquiry. Form delivery is not available yet; please use the contact details shown below.",
+  "description": "Tell us what your inquiry involves. Online form submissions are not available yet; please use the contact details shown below.",
   "paths": [
     { "id": "manufacturers", "label": "For manufacturers", "title": "Expand into Latin America", "copy": "Discuss market assessment, channel development and technology positioning." },
     { "id": "customers", "label": "For Latin American businesses", "title": "Find technology", "copy": "Share your application or requirement for technology sourcing." },

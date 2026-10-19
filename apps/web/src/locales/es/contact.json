@@ -1,7 +1,7 @@
 {
   "eyebrow": "Contacto",
   "title": "Elija la ruta adecuada para su consulta.",
-  "description": "Seleccione la ruta que mejor corresponde a su consulta. El envío del formulario aún no está disponible; utilice los datos de contacto a continuación.",
+  "description": "Cuéntenos de qué trata su consulta. El formulario en línea aún no está habilitado; utilice los datos de contacto a continuación.",
   "paths": [
     { "id": "manufacturers", "label": "Para fabricantes", "title": "Expandirse a América Latina", "copy": "Converse sobre evaluación de mercado, desarrollo de canales y posicionamiento tecnológico." },
     { "id": "customers", "label": "Para empresas latinoamericanas", "title": "Encontrar tecnología", "copy": "Comparta su aplicación o requerimiento para la búsqueda de tecnología." },
