@@ -3,10 +3,10 @@ import { notFound } from "next/navigation";
 import { WhatsAppButton } from "@/components/company/whatsapp-button";
 import { CorporateFooter } from "@/components/site/corporate-footer";
 import { CorporateHeader } from "@/components/site/corporate-header";
-import { CorporatePageFoundation } from "@/components/site/corporate-page-foundation";
 import { LegalPage } from "@/components/site/legal-page";
 import { publicCompany } from "@/config/public-company";
 import { AboutPage, type AboutPageContent } from "@/features/about/about-page";
+import { ContactPage, type ContactPageContent } from "@/features/contact/contact-page";
 import { LatamPage, type LatamPageContent } from "@/features/latam/latam-page";
 import { ManufacturersPage, type ManufacturersPageContent } from "@/features/manufacturers/manufacturers-page";
 import { TechnologyPage, type TechnologyPageContent } from "@/features/technology/technology-page";
@@ -104,8 +104,12 @@ export async function generateMetadata({ params }: LocalizedPageProps): Promise<
     return getLocaleMetadata(locale, t("metadata.title"), t("metadata.description"), page, { noIndex: true });
   }
 
-  const t = await getTranslation(locale, "pageFoundation");
-  return getLocaleMetadata(locale, t(`pages.${page}.title`), t(`pages.${page}.description`), page, { noIndex: true });
+  if (page === "contact") {
+    const t = await getTranslation(locale, "contactPage");
+    return getLocaleMetadata(locale, t("metadata.title"), t("metadata.description"), page, { noIndex: true });
+  }
+
+  return {};
 }
 
 function isRoute(locale: string, page: string): locale is Locale {
@@ -116,13 +120,13 @@ export default async function LocalizedPage({ params }: LocalizedPageProps) {
   const { locale, page } = await params;
   if (!isRoute(locale, page)) notFound();
 
-  const [aboutPage, common, footer, latamPage, legal, pageFoundation, manufacturersPage, technologyPage, whatWeDoPage] = await Promise.all([
+  const [aboutPage, common, contactPage, footer, latamPage, legal, manufacturersPage, technologyPage, whatWeDoPage] = await Promise.all([
     getTranslation(locale, "aboutPage"),
     getTranslation(locale, "common"),
+    getTranslation(locale, "contactPage"),
     getTranslation(locale, "footer"),
     getTranslation(locale, "latamPage"),
     getTranslation(locale, "legal"),
-    getTranslation(locale, "pageFoundation"),
     getTranslation(locale, "manufacturersPage"),
     getTranslation(locale, "technologyPage"),
     getTranslation(locale, "whatWeDoPage"),
@@ -213,13 +217,19 @@ export default async function LocalizedPage({ params }: LocalizedPageProps) {
           currentLocale={locale}
           media={{ introduction: publicCompany.media.aboutIntroImageUrl }}
         />
-      ) : (
-        <CorporatePageFoundation
-          eyebrow={pageFoundation("eyebrow")}
-          pendingCopy={pageFoundation("pendingCopy")}
-          pendingTitle={pageFoundation("pendingTitle")}
-          title={pageFoundation(`pages.${page}.title`)}
+      ) : page === "contact" ? (
+        <ContactPage
+          content={{
+            details: contactPage("details", { returnObjects: true }) as ContactPageContent["details"],
+            form: contactPage("form", { returnObjects: true }) as unknown as ContactPageContent["form"],
+            information: contactPage("information", { returnObjects: true }) as ContactPageContent["information"],
+            introduction: contactPage("introduction", { returnObjects: true }) as ContactPageContent["introduction"],
+            paths: contactPage("paths", { returnObjects: true }) as unknown as ContactPageContent["paths"],
+            pathsHeading: contactPage("pathsHeading", { returnObjects: true }) as ContactPageContent["pathsHeading"],
+          }}
         />
+      ) : (
+        notFound()
       )}
       <CorporateFooter currentLocale={locale} labels={footerLabels(footer)} />
       <WhatsAppButton label={whatsappLabel} url={publicCompany.whatsappUrl} />

@@ -1,0 +1,38 @@
+{
+  "metadata": {
+    "title": "Contact LAMBTECH | LAMBTECH LLC",
+    "description": "Start a commercial conversation about LATAM market development, international technology sourcing or a general LAMBTECH inquiry."
+  },
+  "introduction": {
+    "eyebrow": "Contact LAMBTECH",
+    "title": "Start with the commercial question that matters.",
+    "description": "Whether you represent specialized technology or are evaluating an industrial requirement, LAMBTECH provides a clear starting point for the relevant international and regional conversation."
+  },
+  "pathsHeading": {
+    "eyebrow": "01 — Inquiry routes",
+    "title": "Choose the context that best fits your inquiry.",
+    "description": "A concise starting point helps direct the conversation to the right commercial and technology context."
+  },
+  "paths": [
+    { "id": "manufacturers", "label": "For manufacturers", "title": "Develop opportunities in LATAM", "copy": "Discuss technology positioning, market-development questions and commercial-channel conversations." },
+    { "id": "customers", "label": "For LATAM customers", "title": "Source specialized technology", "copy": "Share the application, requirement or project context behind your technology search." },
+    { "id": "general", "label": "General inquiries", "title": "Start a business conversation", "copy": "Use this path for a commercial question outside the two primary inquiry routes." }
+  ],
+  "information": {
+    "eyebrow": "02 — Contact details",
+    "title": "Use the channel that suits the conversation.",
+    "description": "The mailing address is provided for corporate correspondence. Please use the listed channels for commercial inquiries."
+  },
+  "details": { "email": "Email", "phone": "Telephone", "fax": "Fax", "address": "Mailing address", "whatsapp": "Chat on WhatsApp" },
+  "form": {
+    "title": "Inquiry details",
+    "notice": "The delivery service is not active yet. This form does not submit, store or send information until the approved server-side contact service is available.",
+    "name": "Name", "company": "Company", "email": "Work email", "country": "Country or market", "message": "Message", "required": "Required", "checkFields": "Check required fields", "inactive": "Delivery remains unavailable until the approved server-side contact service is implemented.",
+    "validationSummary": "Please complete the required fields before delivery can be enabled.",
+    "errors": { "name": "Enter your name.", "email": "Enter a valid work email.", "message": "Enter a message." },
+    "honeypot": "Leave this field empty",
+    "inquiryType": "Inquiry type",
+    "inquiryTypes": { "manufacturer": "International manufacturer", "customer": "LATAM technology requirement", "general": "General business inquiry" },
+    "technologyContext": "Technology, product area or application context", "marketOrProject": "LATAM markets of interest or project context", "website": "Company website"
+  }
+}

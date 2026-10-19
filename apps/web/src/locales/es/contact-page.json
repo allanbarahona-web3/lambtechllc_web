@@ -1,0 +1,38 @@
+{
+  "metadata": {
+    "title": "Contacto LAMBTECH | LAMBTECH LLC",
+    "description": "Inicie una conversación comercial sobre desarrollo de mercado LATAM, búsqueda internacional de tecnología o una consulta general para LAMBTECH."
+  },
+  "introduction": {
+    "eyebrow": "Contacto LAMBTECH",
+    "title": "Comience con la pregunta comercial que importa.",
+    "description": "Ya sea que represente tecnología especializada o esté evaluando un requerimiento industrial, LAMBTECH ofrece un punto de partida claro para la conversación internacional y regional relevante."
+  },
+  "pathsHeading": {
+    "eyebrow": "01 — Rutas de consulta",
+    "title": "Elija el contexto que mejor corresponda a su consulta.",
+    "description": "Un punto de partida conciso ayuda a dirigir la conversación hacia el contexto comercial y tecnológico adecuado."
+  },
+  "paths": [
+    { "id": "manufacturers", "label": "Para fabricantes", "title": "Desarrollar oportunidades en LATAM", "copy": "Converse sobre posicionamiento tecnológico, preguntas de desarrollo de mercado y conversaciones de canales comerciales." },
+    { "id": "customers", "label": "Para clientes LATAM", "title": "Buscar tecnología especializada", "copy": "Comparta la aplicación, el requerimiento o el contexto de proyecto detrás de su búsqueda tecnológica." },
+    { "id": "general", "label": "Consultas generales", "title": "Inicie una conversación empresarial", "copy": "Use esta ruta para una pregunta comercial fuera de las dos rutas principales de consulta." }
+  ],
+  "information": {
+    "eyebrow": "02 — Datos de contacto",
+    "title": "Use el canal adecuado para la conversación.",
+    "description": "La dirección postal se proporciona para correspondencia corporativa. Utilice los canales indicados para consultas comerciales."
+  },
+  "details": { "email": "Correo electrónico", "phone": "Teléfono", "fax": "Fax", "address": "Dirección postal", "whatsapp": "Conversar por WhatsApp" },
+  "form": {
+    "title": "Detalles de la consulta",
+    "notice": "El servicio de entrega todavía no está activo. Este formulario no envía, almacena ni comparte información hasta que el servicio de contacto aprobado del lado del servidor esté disponible.",
+    "name": "Nombre", "company": "Empresa", "email": "Correo laboral", "country": "País o mercado", "message": "Mensaje", "required": "Obligatorio", "checkFields": "Revisar campos obligatorios", "inactive": "La entrega continúa sin estar disponible hasta implementar el servicio de contacto aprobado del lado del servidor.",
+    "validationSummary": "Complete los campos obligatorios antes de que se pueda habilitar la entrega.",
+    "errors": { "name": "Ingrese su nombre.", "email": "Ingrese un correo laboral válido.", "message": "Ingrese un mensaje." },
+    "honeypot": "Deje este campo vacío",
+    "inquiryType": "Tipo de consulta",
+    "inquiryTypes": { "manufacturer": "Fabricante internacional", "customer": "Requerimiento tecnológico LATAM", "general": "Consulta empresarial general" },
+    "technologyContext": "Tecnología, área de producto o contexto de aplicación", "marketOrProject": "Mercados LATAM de interés o contexto de proyecto", "website": "Sitio web de la empresa"
+  }
+}
