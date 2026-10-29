@@ -1,0 +1,27 @@
+name: Deploy QA
+
+on:
+  push:
+    branches:
+      - qa
+
+permissions:
+  contents: read
+
+concurrency:
+  group: lambtechllc-web-qa-deploy
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    if: github.event_name == 'push' && github.ref == 'refs/heads/qa'
+    runs-on:
+      - self-hosted
+      - Linux
+      - lambtechllc-web-qa
+    timeout-minutes: 35
+    steps:
+      - name: Deploy the event commit
+        env:
+          DEPLOY_SHA: ${{ github.sha }}
+        run: /home/allan/projects/qa/lambtechllc-web-qa-deploy/bin/deploy-qa.sh "$DEPLOY_SHA"
