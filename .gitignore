@@ -27,8 +27,24 @@ yarn-error.log*
 !.env.example
 *.pem
 *.key
+*.crt
+*.cer
+*.der
 *.p12
 *.pfx
+*.jks
+*.keystore
+
+# Database dumps and local backups
+*.dump
+*.bak
+*.backup
+/backups/
+/dumps/
+
+# Local HTML prototypes
+/index.html
+/index2.html
 
 # Editor and operating-system files
 .DS_Store
